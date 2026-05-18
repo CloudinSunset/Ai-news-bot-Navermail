@@ -1,6 +1,6 @@
 """
 일일 AI/디지털 정책 뉴스 리포트 - 카카오톡 "나에게 보내기" 버전
-- Google News RSS로 기사 수집 → 정규화 후 SequenceMatcher 중복 제거(65%) → 키워드 필터링 → Gemini 2.5 Flash 요약 → 카카오톡 전송
+- Google News RSS로 기사 수집 → 정규화 후 SequenceMatcher 중복 제거(60%) → 키워드 필터링 → Gemini 2.5 Flash 요약 → 카카오톡 전송
 - 카카오 access_token은 6시간 만료라 매 실행마다 refresh_token으로 재발급
 - refresh_token이 갱신되면 GitHub Secret(KAKAO_REFRESH_TOKEN)에 자동 업데이트
 """
@@ -140,7 +140,7 @@ def calculate_title_similarity(title1: str, title2: str) -> float:
 
 
 def collect_filtered_articles(max_total: int = 8):
-    """모든 키워드로 검색 → 정규화 후 SequenceMatcher(65%) 중복 제거 → 필터링 → 상위 N개."""
+    """모든 키워드로 검색 → 정규화 후 SequenceMatcher(60%) 중복 제거 → 필터링 → 상위 N개."""
     all_articles = []
 
     queries = CENTRAL_KEYWORDS + ["AI 정부 정책", "디지털전환 사업", "AI 지자체 MOU"]
@@ -149,7 +149,7 @@ def collect_filtered_articles(max_total: int = 8):
         for art in fetch_news(q, limit=15):
             t = art["title"]
             
-            # 1) 정규화 + SequenceMatcher 기반 중복 검사 (65% 기준)
+            # 1) 정규화 + SequenceMatcher 기반 중복 검사
             is_duplicate = False
             for existing_art in all_articles:
                 similarity = calculate_title_similarity(t, existing_art["title"])
