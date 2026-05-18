@@ -1,8 +1,8 @@
 name: Daily AI News Report
 
 on:
-  schedule:
-    - cron: '47 23 * * *'  # 매일 밤 실행
+#  schedule:
+#    - cron: '47 23 * * *'  # ⭐ 매일 실행 주석 처리
   workflow_dispatch: 
 
 jobs:
