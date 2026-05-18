@@ -117,23 +117,45 @@ def is_relevant(title: str) -> bool:
     return has_filter
 
 
+def get_jaccard_similarity(str1: str, str2: str) -> float:
+    """두 뉴스 제목의 단어(띄어쓰기) 기준 자카드 유사도를 계산합니다."""
+    set1 = set(str1.split())
+    set2 = set(str2.split())
+    
+    if not set1 or not set2:
+        return 0.0
+        
+    intersection = len(set1.intersection(set2)) # 교집합 (겹치는 단어 수)
+    union = len(set1.union(set2))               # 합집합 (전체 단어 수)
+    
+    return intersection / union
+
+
 def collect_filtered_articles(max_total: int = 8):
-    """모든 키워드로 검색 → 제목 중복 제거 → 필터링 → 상위 N개."""
+    """모든 키워드로 검색 → 자카드 유사도(70%) 중복 제거 → 필터링 → 상위 N개."""
     all_articles = []
-    seen_titles = set()
 
     queries = CENTRAL_KEYWORDS + ["AI 정부 정책", "디지털전환 사업", "AI 지자체 MOU"]
 
     for q in queries:
         for art in fetch_news(q, limit=15):
             t = art["title"]
-            # 단순 중복 제거 (제목 앞 30자 기준)
-            key = t[:30]
-            if key in seen_titles:
-                continue
+            
+            # 1) 자카드 유사도 기반 중복 검사 (70% 기준)
+            is_duplicate = False
+            for existing_art in all_articles:
+                similarity = get_jaccard_similarity(t, existing_art["title"])
+                if similarity >= 0.7:  # 70% 이상 유사하면 중복 기사로 판단
+                    is_duplicate = True
+                    break
+            
+            if is_duplicate:
+                continue  # 이미 수집한 기사와 너무 비슷하면 패스
+                
+            # 2) 키워드 필터링 (정치/경제/기업홍보 등 제외)
             if not is_relevant(t):
                 continue
-            seen_titles.add(key)
+                
             all_articles.append(art)
         time.sleep(0.3)  # RSS 과다요청 방지
 
