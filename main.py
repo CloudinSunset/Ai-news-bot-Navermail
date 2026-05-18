@@ -1,6 +1,6 @@
 """
 일일 AI/디지털 정책 뉴스 리포트 - 카카오톡 "나에게 보내기" 버전
-- Google News RSS로 기사 수집 → 키워드 필터링 → Gemini 2.5 Flash 요약 → 카카오톡 전송
+- Google News RSS로 기사 수집 → 정규화 후 SequenceMatcher 중복 제거(65%) → 키워드 필터링 → Gemini 2.5 Flash 요약 → 카카오톡 전송
 - 카카오 access_token은 6시간 만료라 매 실행마다 refresh_token으로 재발급
 - refresh_token이 갱신되면 GitHub Secret(KAKAO_REFRESH_TOKEN)에 자동 업데이트
 """
@@ -9,11 +9,13 @@ import os
 import sys
 import json
 import time
+import re
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 import xml.etree.ElementTree as ET
 import requests
 import google.generativeai as genai
+from difflib import SequenceMatcher
 
 # ─────────────────────────────────────────────
 # 환경변수 (GitHub Secrets에서 주입)
@@ -41,8 +43,8 @@ ECONOMY_KEYWORDS = ["증시", "주가", "상한가", "호황", "성장", "매수
 
 # 정부/지자체 키워드 없으면 제외: 기업 홍보성
 CORPORATE_KEYWORDS = ["출시", "선보여", "이벤트", "할인", "사전예약", "공개채용", "업데이트",
-                     "이용권", "구독", "신제품", "출장 서비스", "솔루션 공급", "B2B", "CSP",
-                     "공모", "기술력", "플랫폼", "서비스"]
+                      "이용권", "구독", "신제품", "출장 서비스", "솔루션 공급", "B2B", "CSP",
+                      "공모", "기술력", "플랫폼", "서비스"]
 
 # 정부/지자체 키워드 없으면 제외: 교육/기관
 EXCLUDE_ORGANIZATIONS = ["대학", "대학교", "학교", "학원", "교육", "캠프", "졸업", "입학", "수강", "수료"]
@@ -88,7 +90,7 @@ def fetch_news(query: str, limit: int = 20):
 
 
 # ─────────────────────────────────────────────
-# 2) 키워드 필터링
+# 2) 키워드 필터링 및 중복 제거
 # ─────────────────────────────────────────────
 def is_relevant(title: str) -> bool:
     """제목 기준으로 관련 기사인지 판정."""
@@ -117,22 +119,28 @@ def is_relevant(title: str) -> bool:
     return has_filter
 
 
-def get_jaccard_similarity(str1: str, str2: str) -> float:
-    """두 뉴스 제목의 단어(띄어쓰기) 기준 자카드 유사도를 계산합니다."""
-    set1 = set(str1.split())
-    set2 = set(str2.split())
+def clean_title(title: str) -> str:
+    """뉴스 제목에서 불필요한 괄호태그, 특수문자, 띄어쓰기를 제거하여 정규화"""
+    # 1. 대괄호, 소괄호 및 그 안의 텍스트 제거 (예: [속보], (종합), 【단독】)
+    title = re.sub(r'\[.*?\]|\(.*?\)|【.*?】', ' ', title)
+    # 2. 한글, 영문, 숫자만 남기고 공백까지 포함해 특수문자 전부 제거 (밀착 비교용)
+    title = re.sub(r'[^가-힣a-zA-Z0-9]', '', title)
+    return title.lower()
+
+
+def calculate_title_similarity(title1: str, title2: str) -> float:
+    """정규화된 텍스트를 바탕으로 SequenceMatcher(연속성 중심) 유사도 계산"""
+    t1 = clean_title(title1)
+    t2 = clean_title(title2)
     
-    if not set1 or not set2:
+    if not t1 or not t2:
         return 0.0
         
-    intersection = len(set1.intersection(set2)) # 교집합 (겹치는 단어 수)
-    union = len(set1.union(set2))               # 합집합 (전체 단어 수)
-    
-    return intersection / union
+    return SequenceMatcher(None, t1, t2).ratio()
 
 
 def collect_filtered_articles(max_total: int = 8):
-    """모든 키워드로 검색 → 자카드 유사도(70%) 중복 제거 → 필터링 → 상위 N개."""
+    """모든 키워드로 검색 → 정규화 후 SequenceMatcher(65%) 중복 제거 → 필터링 → 상위 N개."""
     all_articles = []
 
     queries = CENTRAL_KEYWORDS + ["AI 정부 정책", "디지털전환 사업", "AI 지자체 MOU"]
@@ -141,11 +149,11 @@ def collect_filtered_articles(max_total: int = 8):
         for art in fetch_news(q, limit=15):
             t = art["title"]
             
-            # 1) 자카드 유사도 기반 중복 검사 (70% 기준)
+            # 1) 정규화 + SequenceMatcher 기반 중복 검사 (65% 기준)
             is_duplicate = False
             for existing_art in all_articles:
-                similarity = get_jaccard_similarity(t, existing_art["title"])
-                if similarity >= 0.7:  # 70% 이상 유사하면 중복 기사로 판단
+                similarity = calculate_title_similarity(t, existing_art["title"])
+                if similarity >= 0.6:  # 60% 이상 유사하면 중복 기사로 판단
                     is_duplicate = True
                     break
             
@@ -207,7 +215,6 @@ def refresh_kakao_token():
     j = resp.json()
 
     access_token = j["access_token"]
-    # 카카오는 refresh_token 만료 1개월 이내일 때만 새 refresh_token을 함께 발급
     new_refresh = j.get("refresh_token")
     return access_token, new_refresh
 
