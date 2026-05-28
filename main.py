@@ -1,6 +1,6 @@
-"""
-일일 AI/디지털 정책 뉴스 리포트 - 네이버 메일 (HTML 포맷 및 JSON 파싱 적용)
-"""
+# ─────────────────────────────────────────────
+# 일일 AI/디지털 정책 뉴스 리포트 - 네이버 메일 (HTML 포맷 및 JSON 파싱 적용)
+# ─────────────────────────────────────────────
 
 import os
 import sys
@@ -66,6 +66,11 @@ def fetch_news(query: str, limit: int = 20):
         link = (item.findtext("link") or "").strip()
         source = item.find("source")
         source_name = source.text if source is not None else ""
+        
+        # 구글 뉴스가 강제로 붙인 ' - 언론사명'을 제목에서 안전하게 제거합니다.
+        if source_name:
+            title = re.sub(rf'\s*-\s*{re.escape(source_name)}$', '', title)
+
         if title and link:
             items.append({
                 "title": title,
@@ -128,7 +133,7 @@ def collect_filtered_articles(max_total: int = 8):
 # ─────────────────────────────────────────────
 def summarize_with_gemini_to_html(articles: list, today_str: str) -> str:
     if not articles:
-        return f"<h2>📰 {today_str} AI/디지털 정책 뉴스</h2><hr><p>오늘 조건에 맞는 기사가 없었습니다.</p>"
+        return f"<h2>📰 {today_str} AI 언론 동향 뉴스</h2><hr><p>오늘 조건에 맞는 기사가 없었습니다.</p>"
 
     client = genai.Client(api_key=GEMINI_API_KEY)
     prompt_data = [{"index": i, "title": a['title']} for i, a in enumerate(articles)]
@@ -149,7 +154,7 @@ def summarize_with_gemini_to_html(articles: list, today_str: str) -> str:
         "]"
     )
 
-    html_body = f"<h2 style='color: #2c3e50;'>📰 {today_str} 지역별 AI 언론 동향</h2><hr style='border: 1px solid #eee; margin-bottom: 20px;'>"
+    html_body = f"<h2 style='color: #2c3e50;'>📰 {today_str} AI 언론 동향 뉴스</h2><hr style='border: 1px solid #eee; margin-bottom: 20px;'>"
 
     try:
         resp = client.models.generate_content(
