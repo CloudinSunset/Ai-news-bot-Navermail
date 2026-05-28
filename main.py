@@ -11,7 +11,7 @@ import urllib.parse
 from datetime import datetime, timezone, timedelta
 import xml.etree.ElementTree as ET
 import requests
-import google.generativeai as genai
+from google import genai
 from difflib import SequenceMatcher
 import smtplib
 from email.mime.text import MIMEText
