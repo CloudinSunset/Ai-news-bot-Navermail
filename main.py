@@ -21,9 +21,9 @@ from email.mime.multipart import MIMEMultipart
 # 환경변수 (GitHub Secrets에서 주입)
 # ─────────────────────────────────────────────
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-NAVER_ID = os.environ["rla7735"]              # 보내는 사람 네이버 아이디 (예: 'myid', '@naver.com' 제외)
-NAVER_APP_PW = os.environ["117TZE4HN2XD"]      # 네이버 2단계 인증 애플리케이션 비밀번호
-RECIPIENT_EMAIL = os.environ["about_q@naver.com"] # 받는 사람 이메일 주소
+NAVER_ID = os.environ["NAVER_ID"]              # 보내는 사람 네이버 아이디 (예: 'myid', '@naver.com' 제외)
+NAVER_APP_PW = os.environ["NAVER_APP_PW"]      # 네이버 2단계 인증 애플리케이션 비밀번호
+RECIPIENT_EMAIL = os.environ["RECIPIENT_EMAIL"] # 받는 사람 이메일 주소
 
 # ─────────────────────────────────────────────
 # 키워드 정의
@@ -126,14 +126,13 @@ def collect_filtered_articles(max_total: int = 8):
     return all_articles[:max_total]
 
 # ─────────────────────────────────────────────
-# 3) Gemini 요약
+# 3) Gemini 요약 (최신 SDK 적용)
 # ─────────────────────────────────────────────
 def summarize_with_gemini(articles: list) -> str:
     if not articles:
         return "오늘 조건에 맞는 기사가 없었습니다."
 
-    genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    client = genai.Client(api_key=GEMINI_API_KEY) # 최신 클라이언트 선언 방식
 
     titles_block = "\n".join([f"- {a['title']} ({a['source']})" for a in articles])
     prompt = (
@@ -146,7 +145,10 @@ def summarize_with_gemini(articles: list) -> str:
     )
 
     try:
-        resp = model.generate_content(prompt)
+        resp = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt
+        )
         return resp.text.strip()
     except Exception as e:
         print(f"[WARN] Gemini 요약 실패: {e}", flush=True)
