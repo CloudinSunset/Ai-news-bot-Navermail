@@ -22,8 +22,8 @@ from email.mime.multipart import MIMEMultipart
 # ─────────────────────────────────────────────
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 NAVER_ID = os.environ["rla7735"]              # 보내는 사람 네이버 아이디 (예: 'myid', '@naver.com' 제외)
-NAVER_APP_PW = os.environ["NAVER_APP_PW"]      # 네이버 2단계 인증 애플리케이션 비밀번호
-RECIPIENT_EMAIL = os.environ["RECIPIENT_EMAIL"] # 받는 사람 이메일 주소
+NAVER_APP_PW = os.environ["117TZE4HN2XD"]      # 네이버 2단계 인증 애플리케이션 비밀번호
+RECIPIENT_EMAIL = os.environ["about_q@naver.com"] # 받는 사람 이메일 주소
 
 # ─────────────────────────────────────────────
 # 키워드 정의
