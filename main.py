@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────
 # 일일 AI/디지털 정책 뉴스 리포트 - 네이버 메일
-# (과도한 프롬프트 방어막 제거로 정상 요약 복구 버전)
+# (서버 혼잡 대비 10초 재시도 로직 추가 버전)
 # ─────────────────────────────────────────────
 
 import os
@@ -54,7 +54,6 @@ GOV_KEYWORDS = ["정부", "부처", "시청", "도청", "지자체", "공공", "
 # 공통 유틸 - HTML/URL 안전 처리
 # ─────────────────────────────────────────────
 def safe_url(u: str) -> str:
-    # http(s) 스킴만 허용. 그 외(javascript: 등)는 무력화.
     try:
         scheme = urlparse(u).scheme.lower()
     except Exception:
@@ -63,7 +62,6 @@ def safe_url(u: str) -> str:
 
 
 def esc(s: str) -> str:
-    # HTML 특수문자 이스케이프 (속성/본문 공용).
     return html.escape(s or "", quote=True)
 
 
@@ -87,7 +85,6 @@ def fetch_news(query: str, limit: int = 20, retries: int = 2):
     if content is None:
         return []
 
-    # XML 파싱 예외 보호
     try:
         root = ET.fromstring(content)
     except ET.ParseError as e:
@@ -101,7 +98,6 @@ def fetch_news(query: str, limit: int = 20, retries: int = 2):
         source = item.find("source")
         source_name = source.text if source is not None else ""
 
-        # 구글 뉴스가 강제로 붙인 ' - 언론사명'을 제목에서 안전하게 제거
         if source_name:
             title = re.sub(rf'\s*-\s*{re.escape(source_name)}$', '', title)
 
@@ -118,19 +114,15 @@ def fetch_news(query: str, limit: int = 20, retries: int = 2):
 # 2) 키워드 필터링 및 중복 제거
 # ─────────────────────────────────────────────
 def is_relevant(title: str) -> bool:
-    if any(k in title for k in POLITICS_KEYWORDS):
-        return False
-    if any(k in title for k in ECONOMY_KEYWORDS):
-        return False
+    if any(k in title for k in POLITICS_KEYWORDS): return False
+    if any(k in title for k in ECONOMY_KEYWORDS): return False
 
     has_gov = any(k in title for k in GOV_KEYWORDS)
     has_filter = any(k in title for k in FILTER_KEYWORDS) or \
                  any(k in title for k in CENTRAL_KEYWORDS)
 
-    if any(k in title for k in EXCLUDE_ORGANIZATIONS) and not has_gov:
-        return False
-    if any(k in title for k in CORPORATE_KEYWORDS) and not has_gov:
-        return False
+    if any(k in title for k in EXCLUDE_ORGANIZATIONS) and not has_gov: return False
+    if any(k in title for k in CORPORATE_KEYWORDS) and not has_gov: return False
 
     return has_filter
 
@@ -144,8 +136,7 @@ def clean_title(title: str) -> str:
 def calculate_title_similarity(title1: str, title2: str) -> float:
     t1 = clean_title(title1)
     t2 = clean_title(title2)
-    if not t1 or not t2:
-        return 0.0
+    if not t1 or not t2: return 0.0
     return SequenceMatcher(None, t1, t2).ratio()
 
 
@@ -163,10 +154,8 @@ def collect_filtered_articles(max_total: int = 8):
                     is_duplicate = True
                     break
 
-            if is_duplicate:
-                continue
-            if not is_relevant(t):
-                continue
+            if is_duplicate: continue
+            if not is_relevant(t): continue
 
             all_articles.append(art)
         time.sleep(0.3)
@@ -178,7 +167,6 @@ def collect_filtered_articles(max_total: int = 8):
 # 3) Gemini 요약 (JSON 데이터 파이프라인)
 # ─────────────────────────────────────────────
 def _strip_code_fence(text: str) -> str:
-    # 마크다운 파싱 오류를 원천 차단하기 위해 백틱을 아스키코드로 생성하여 결합
     text = text.strip()
     fence = chr(96) * 3 
     pattern = rf"{fence}(?:json)?\s*(.*?)\s*{fence}"
@@ -190,7 +178,6 @@ def _strip_code_fence(text: str) -> str:
 
 
 def _render_article_div(region, title, source, link, summary):
-    # 기사 1건을 안전하게 이스케이프하여 HTML div로 렌더링
     return (
         '<div style="margin-bottom: 25px; line-height: 1.6; font-family: \'Malgun Gothic\', sans-serif;">\n'
         f'    <a href="{esc(safe_url(link))}" style="text-decoration: none; font-size: 15px; font-weight: bold; color: #03c75a;">📍 {esc(region)}</a><br>\n'
@@ -213,7 +200,6 @@ def summarize_with_gemini_to_html(articles: list, today_str: str) -> str:
     client = genai.Client(api_key=GEMINI_API_KEY)
     prompt_data = [{"index": i, "title": a['title']} for i, a in enumerate(articles)]
 
-    # ⭐ 프롬프트 인젝션 방어 문구 삭제
     prompt = (
         "다음은 오늘의 뉴스 기사 데이터이다. 각 기사를 분석하여 반드시 아래 지시사항에 따라 **JSON 배열(Array) 형태**로만 답변해라.\n\n"
         "[지시사항]\n"
@@ -229,45 +215,58 @@ def summarize_with_gemini_to_html(articles: list, today_str: str) -> str:
         "]"
     )
 
-    try:
-        resp = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt,
-        )
-        raw_text = _strip_code_fence(resp.text)
-        summary_data = json.loads(raw_text)
+    summary_data = None
+    max_retries = 3 # 최대 3번까지 재시도
 
-        # index → 요약 매핑 (환각/누락/순서 어긋남 방어)
-        summary_by_idx = {}
-        for item in summary_data:
-            idx = item.get("index")
-            if isinstance(idx, int) and 0 <= idx < len(articles):
-                summary_by_idx[idx] = {
-                    "region": item.get("region", "종합"),
-                    "summary": item.get("summary", "요약 없음"),
-                }
-
-        body = ""
-        for i, art in enumerate(articles):
-            info = summary_by_idx.get(i, {"region": "종합", "summary": "요약을 생성하지 못했습니다."})
-            body += _render_article_div(
-                info["region"], art["title"], art["source"], art["link"], info["summary"]
+    # ⭐ 10초 대기 재시도 로직 적용
+    for attempt in range(max_retries):
+        try:
+            resp = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
             )
-        return header + body
+            raw_text = _strip_code_fence(resp.text)
+            summary_data = json.loads(raw_text)
+            break # 성공하면 즉시 루프 탈출!
+            
+        except Exception as e:
+            print(f"[WARN] Gemini 요약 실패 (시도 {attempt + 1}/{max_retries}): {e}", flush=True)
+            if attempt < max_retries - 1:
+                print("⏳ 구글 서버 혼잡! 10초 후 다시 시도합니다...", flush=True)
+                time.sleep(10) # 10초 대기 후 다시 시도
+            else:
+                print("[ERROR] 최대 재시도 횟수를 초과했습니다. 요약 없이 원문만 전송합니다.", flush=True)
 
-    except Exception as e:
-        print(f"[WARN] Gemini 요약 또는 JSON 파싱 실패: {e}", flush=True)
-        # 깨끗한 fallback: 헤더 + 요약 없는 기사 목록
+    # 3번 다 실패해서 summary_data가 여전히 None일 경우 (기존의 Fallback 로직)
+    if not summary_data:
         body = ""
         for art in articles:
             body += (
                 '<div style="margin-bottom: 20px;">\n'
                 f'    <a href="{esc(safe_url(art["link"]))}" style="text-decoration: none; font-weight: bold; color: #03c75a;">📍 원문보기</a><br>\n'
                 f'    <span style="font-weight: bold;">📌 {esc(art["title"])}</span> - {esc(art["source"])}<br>\n'
-                '    <span>✓ 일시적 서버 오류로 요약을 제공할 수 없습니다.</span>\n'
+                '    <span>✓ 일시적인 AI 서버 혼잡으로 요약을 제공할 수 없습니다.</span>\n'
                 '</div>\n'
             )
         return header + body
+
+    # 성공적으로 요약을 받아왔을 경우
+    summary_by_idx = {}
+    for item in summary_data:
+        idx = item.get("index")
+        if isinstance(idx, int) and 0 <= idx < len(articles):
+            summary_by_idx[idx] = {
+                "region": item.get("region", "종합"),
+                "summary": item.get("summary", "요약 없음"),
+            }
+
+    body = ""
+    for i, art in enumerate(articles):
+        info = summary_by_idx.get(i, {"region": "종합", "summary": "요약을 생성하지 못했습니다."})
+        body += _render_article_div(
+            info["region"], art["title"], art["source"], art["link"], info["summary"]
+        )
+    return header + body
 
 
 # ─────────────────────────────────────────────
