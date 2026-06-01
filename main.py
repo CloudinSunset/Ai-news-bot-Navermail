@@ -52,7 +52,7 @@ REGIONS_SUB = [
 # 두 리스트를 합쳐서 최종 REGIONS 생성
 REGIONS = REGIONS_MAIN + REGIONS_SUB
 
-FILTER_KEYWORDS = ["AI", "인공지능", "AX", "DX", "로봇", "데이터산업", "산업", "사업", "MOU", "디지털전환"]
+FILTER_KEYWORDS = ["AI", "인공지능", "AX", "DX", "로봇", "데이터산업", "산업", "사업", "MOU", "디지털전환", "양자", "체결", "선정"]
 
 ECONOMY_KEYWORDS = ["증시", "주가", "상한가", "호황", "성장", "매수", "나스닥", "코스피",
                     "GDP", "금리", "환율", "실적", "수혜", "전망", "분석", "리포트",
