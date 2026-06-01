@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────
 # 수동 큐레이션 AI 정책 뉴스 리포트 - 네이버 메일
-# (사용자가 직접 입력한 기사 목록을 AI가 요약하여 발송)
+# (작성란 8개 기본 제공 및 빈칸 자동 무시 기능 추가)
 # ─────────────────────────────────────────────
 
 import os
@@ -23,37 +23,42 @@ NAVER_APP_PW = os.environ.get("NAVER_APP_PW", "").strip()
 RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 # ─────────────────────────────────────────────
-# 📝 매일 이곳에 원하는 기사를 입력하세요!
+# 📝 매일 이곳에 원하는 기사를 입력하세요! (최대 8개)
 # ─────────────────────────────────────────────
-# 형식: {"region": "지역명", "title": "기사 제목", "link": "기사 URL", "source": "언론사명"}
+# 주의: 따옴표("") 안의 [글자]만 지우고 내용을 붙여넣으세요.
+# 남는 칸은 지울 필요 없이 그대로 두면 코드가 알아서 무시합니다!
+
 MY_NEWS_LIST = [
     {
         "region": "울산",
         "title": "울산시 환경교육센터와 협력''시민 맞춤형 환경교육''확대 추진",
         "link": "http://www.ecolaw.co.kr/news/articleView.html?idxno=118509",
-        "source": "환경법률" 
+        "source": "환경법률"
     },
-    
     {
         "region": "서울",
         "title": "서울시, 스마트도시 인공지능 서비스 본격 도입",
         "link": "https://news.naver.com",
         "source": "뉴스1"
     },
-    
     {
         "region": "울산",
-        "title": "울산서 ‘중증장애 현장중심 직업재활센터’ 가동" ,
-        "link": "https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING" ,
+        "title": "울산서 ‘중증장애 현장중심 직업재활센터’ 가동",
+        "link": "https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING",
         "source": "부산일보"
     },
-    
     {
-        "region": ,
-        "title": ,
-        "link": ,
-        "source": 
+        "region": "[울산]",
+        "title": "[울산서 ‘중증장애 현장중심 직업재활센터’ 가동]",
+        "link": "[https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING]",
+        "source": "[부산일보]"
     },
+    {
+        "region": "",
+        "title": "",
+        "link": "",
+        "source": ""
+    }
 
 ]
 
@@ -95,7 +100,6 @@ def summarize_and_build_html(articles: list, today_str: str) -> str:
 
     client = genai.Client(api_key=GEMINI_API_KEY)
     
-    # 이미 사용자가 지역을 입력했으므로, AI에게는 제목만 주고 요약만 부탁합니다.
     prompt_data = [{"index": i, "title": a['title']} for i, a in enumerate(articles)]
     
     prompt = (
@@ -132,7 +136,6 @@ def summarize_and_build_html(articles: list, today_str: str) -> str:
             else:
                 print("[ERROR] 요약 실패. 원문만 전송합니다.", flush=True)
 
-    # 요약 실패 시 Fallback
     if not summary_data:
         body = ""
         for art in articles:
@@ -142,7 +145,6 @@ def summarize_and_build_html(articles: list, today_str: str) -> str:
             )
         return header + body
 
-    # 요약 성공 시 조립
     summary_by_idx = {}
     for item in summary_data:
         idx = item.get("index")
@@ -186,12 +188,21 @@ def main():
     kst = timezone(timedelta(hours=9))
     today_str = datetime.now(kst).strftime("%Y-%m-%d (%a)")
 
-    # 사용자가 직접 입력한 리스트 가져오기
-    articles = MY_NEWS_LIST
-    print(f"[1/2] 수동 입력 기사 확인 - 총 {len(articles)}건", flush=True)
+    # ⭐ 사용자가 입력한 기사 중 '[제목]' 상태인 빈칸은 자동으로 무시하는 필터링 로직!
+    valid_articles = []
+    for art in MY_NEWS_LIST:
+        title = art.get("title", "").strip()
+        if title and title != "[제목]":
+            valid_articles.append(art)
+
+    print(f"[1/2] 수동 입력 기사 확인 - 총 {len(valid_articles)}건 (빈칸 제외)", flush=True)
+
+    if not valid_articles:
+        print("[INFO] 입력된 기사가 없어 메일 전송을 생략합니다.")
+        return
 
     print("[2/2] Gemini 요약 및 메일 전송", flush=True)
-    html_output = summarize_and_build_html(articles, today_str)
+    html_output = summarize_and_build_html(valid_articles, today_str)
 
     subject = f"📰 {today_str} AI 언론 동향 뉴스 리포트"
     send_naver_mail(subject, html_output)
