@@ -30,36 +30,53 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "울산",
-        "title": "울산시 환경교육센터와 협력''시민 맞춤형 환경교육''확대 추진",
-        "link": "http://www.ecolaw.co.kr/news/articleView.html?idxno=118509",
-        "source": "환경법률"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "서울",
-        "title": "서울시, 스마트도시 인공지능 서비스 본격 도입",
-        "link": "https://news.naver.com",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "울산",
-        "title": "울산서 ‘중증장애 현장중심 직업재활센터’ 가동",
-        "link": "https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING",
-        "source": "부산일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "[울산]",
-        "title": "[울산서 ‘중증장애 현장중심 직업재활센터’ 가동]",
-        "link": "[https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING]",
-        "source": "[부산일보]"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "",
-        "title": "",
-        "link": "",
-        "source": ""
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     }
-
 ]
 
 # ─────────────────────────────────────────────
@@ -83,7 +100,7 @@ def _render_article_div(region, title, source, link, summary):
     return (
         '<div style="margin-bottom: 25px; line-height: 1.6; font-family: \'Malgun Gothic\', sans-serif;">\n'
         f'    <a href="{esc(link)}" style="text-decoration: none; font-size: 15px; font-weight: bold; color: #03c75a;">📍 {esc(region)}</a><br>\n'
-        f'    <span style="font-weight: bold; font-size: 15px; color: #333;">□ {esc(title)}</span> '
+        f'    <span style="font-weight: bold; font-size: 15px; color: #333;">📌 {esc(title)}</span> '
         f'<span style="font-size: 13px; color: #888;">- {esc(source)}</span><br>\n'
         f'    <span style="font-size: 14px; color: #555;">✓ {esc(summary)}</span>\n'
         '</div>\n'
@@ -103,9 +120,9 @@ def summarize_and_build_html(articles: list, today_str: str) -> str:
     prompt_data = [{"index": i, "title": a['title']} for i, a in enumerate(articles)]
     
     prompt = (
-        "다음은 오늘의 뉴스 기사 데이터이다. 각 기사 제목을 분석하여 반드시 아래 지시사항에 따라 **JSON 배열(Array) 형태**로만 답변해라.\n\n"
+        "다음은 오늘의 뉴스 기사 제목이다. 각 기사 제목을 검색하여 반드시 아래 지시사항에 따라 **JSON 배열(Array) 형태**로만 답변해라.\n\n"
         "[지시사항]\n"
-        "1. \"summary\": 기사 제목을 바탕으로 핵심 내용(누가, 무엇을, 어떻게)과 목적을 유추하여 1~2줄로 명확하게 요약해라.\n"
+        "1. \"summary\": 기사 검색 내용을 바탕으로 핵심 내용(누가, 무엇을, 어떻게)과 목적을 1~2줄로 명확하게 요약해라.\n"
         "2. 다른 말은 절대 덧붙이지 말고 오직 JSON 포맷만 출력해라.\n\n"
         "[입력 데이터]\n"
         f"{json.dumps(prompt_data, ensure_ascii=False)}\n\n"
