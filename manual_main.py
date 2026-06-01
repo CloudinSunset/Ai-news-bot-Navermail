@@ -30,10 +30,10 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "네이버 이동",
+        "title": "울산시, 6월부터 경제총조사 실시...사업체 6만곳 대상",
+        "link": "www.naver.com",
+        "source": "하세용"
     },
     {
         "region": "[지역]",
