@@ -28,23 +28,33 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 # 형식: {"region": "지역명", "title": "기사 제목", "link": "기사 URL", "source": "언론사명"}
 MY_NEWS_LIST = [
     {
-        "region": "충남",
-        "title": "충남도-삼성전자, 지역 AI 인재 양성 MOU 체결",
-        "link": "https://news.naver.com/...",
-        "source": "전자신문" 
+        "region": "울산",
+        "title": "울산시 환경교육센터와 협력''시민 맞춤형 환경교육''확대 추진",
+        "link": "http://www.ecolaw.co.kr/news/articleView.html?idxno=118509",
+        "source": "환경법률" 
     },
+    
     {
         "region": "서울",
         "title": "서울시, 스마트도시 인공지능 서비스 본격 도입",
-        "link": "https://news.naver.com/...",
+        "link": "https://news.naver.com",
         "source": "뉴스1"
     },
+    
     {
-        "region": "전북",
-        "title": "김제시, 첨단 AI 농업 로봇 실증사업 선정",
-        "link": "https://news.naver.com/...",
-        "source": "전북도민일보"
-    }
+        "region": "울산",
+        "title": "울산서 ‘중증장애 현장중심 직업재활센터’ 가동" ,
+        "link": "https://n.news.naver.com/mnews/article/082/0001383304?rc=N&ntype=RANKING" ,
+        "source": "부산일보"
+    },
+    
+    {
+        "region": ,
+        "title": ,
+        "link": ,
+        "source": 
+    },
+
 ]
 
 # ─────────────────────────────────────────────
