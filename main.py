@@ -1,6 +1,6 @@
 # ─────────────────────────────────────────────
 # 일일 AI/디지털 정책 뉴스 리포트 - 네이버 메일
-# (서버 혼잡 대비 10초 재시도 로직 추가 버전)
+# (서버 혼잡 대비 10초 재시도 로직 + 전국 세부 지역명 완벽 적용 버전)
 # ─────────────────────────────────────────────
 
 import os
@@ -32,8 +32,26 @@ RECIPIENT_EMAIL = os.environ["RECIPIENT_EMAIL"].strip()
 # 키워드 정의
 # ─────────────────────────────────────────────
 CENTRAL_KEYWORDS = ["AI 정책", "데이터센터", "양자컴퓨팅", "디지털전환", "인공지능 전략"]
-REGIONS = ["서울", "경기", "인천", "강원", "충북", "충남", "전북", "전남",
-           "경북", "경남", "부산", "대구", "광주", "대전", "제주"]
+
+# 1. 광역 지자체 (세종 포함)
+REGIONS_MAIN = ["서울", "경기", "인천", "강원", "충북", "충남", "전북", "전남",
+                "경북", "경남", "부산", "대구", "광주", "대전", "제주", "세종"]
+
+# 2. 전국 세부 시/군 지역명 (160여 개)
+REGIONS_SUB = [
+    "수원", "성남", "의정부", "안양", "부천", "광명", "평택", "동두천", "안산", "고양", "과천", "구리", "남양주", "오산", "시흥", "군포", "의왕", "하남", "용인", "파주", "이천", "안성", "김포", "화성", "광주", "양주", "포천", "여주", "연천", "가평", "양평", 
+    "춘천", "원주", "강릉", "동해", "태백", "속초", "삼척", "홍천", "횡성", "영월", "평창", "정선", "철원", "화천", "양구", "인제", "고성", "양양", 
+    "청주", "충주", "제천", "보은", "옥천", "영동", "증평", "진천", "괴산", "음성", "단양", 
+    "천안", "공주", "보령", "아산", "서산", "논산", "계룡", "당진", "금산", "부여", "서천", "청양", "홍성", "예산", "태안", 
+    "전주", "군산", "익산", "정읍", "남원", "김제", "완주", "진안", "무주", "장수", "임실", "순창", "고창", "부안", 
+    "목포", "여수", "순천", "나주", "광양", "담양", "곡성", "구례", "고흥", "보성", "화순", "장흥", "강진", "해남", "영암", "무안", "함평", "영광", "장성", "완도", "진도", "신안", 
+    "포항", "경주", "김천", "안동", "구미", "영주", "영천", "상주", "문경", "경산", "군위", "의성", "청송", "영양", "영덕", "청도", "고령", "성주", "칠곡", "예천", "봉화", "울진", "울릉", 
+    "창원", "진주", "통영", "사천", "김해", "밀양", "거제", "양산", "의령", "함안", "창녕", "남해", "하동", "산청", "함양", "거창", "합천"
+]
+
+# 두 리스트를 합쳐서 최종 REGIONS 생성
+REGIONS = REGIONS_MAIN + REGIONS_SUB
+
 FILTER_KEYWORDS = ["AI", "인공지능", "AX", "DX", "로봇", "데이터산업", "산업", "사업", "MOU", "디지털전환"]
 
 ECONOMY_KEYWORDS = ["증시", "주가", "상한가", "호황", "성장", "매수", "나스닥", "코스피",
@@ -42,13 +60,16 @@ ECONOMY_KEYWORDS = ["증시", "주가", "상한가", "호황", "성장", "매수
 
 CORPORATE_KEYWORDS = ["출시", "선보여", "이벤트", "할인", "사전예약", "공개채용", "업데이트",
                       "이용권", "구독", "신제품", "출장 서비스", "솔루션 공급", "B2B", "CSP",
-                      "공모", "기술력", "플랫폼", "서비스", "ET톡"]
+                      "기술력", "플랫폼", "서비스", "ET톡"]
 
 EXCLUDE_ORGANIZATIONS = ["대학", "대학교", "학교", "학원", "교육", "캠프", "졸업", "입학", "수강", "수료"]
+
 POLITICS_KEYWORDS = ["후보", "공약", "출마", "선거", "의원", "당선", "유세", "국회", "총선", "지선", "대선", "국힘", "민주당", "사설", "트럼프", "백악관", "총리", "성과",
-                     "양향자", "하정우", "배경훈", "이재명"]
-GOV_KEYWORDS = ["정부", "부처", "시청", "도청", "지자체", "공공", "국가", "공고",
-                "과학기술정보통신부", "중기부", "산업부"] + REGIONS
+                     "양향자", "하정우", "배경훈", "이재명", "머스크", "업스테이지"]
+
+# 시청, 군청, 구청 등 포괄적 지자체 단어와 확장된 REGIONS 결합
+GOV_KEYWORDS = ["정부", "부처", "시청", "도청", "군청", "구청", "지자체", "공공", "국가", "공고",
+                "과학기술정보통신부", "과기정통부", "중기부", "산업부"] + REGIONS
 
 
 # ─────────────────────────────────────────────
@@ -143,7 +164,7 @@ def calculate_title_similarity(title1: str, title2: str) -> float:
 
 def collect_filtered_articles(max_total: int = 8):
     all_articles = []
-    queries = CENTRAL_KEYWORDS + ["AI 정부 정책", "디지털전환 사업", "AI 지자체 MOU"]
+    queries = CENTRAL_KEYWORDS + ["AI 정부 정책", "디지털전환 사업", "AI 지자체 MOU", "AI 지자체", "지역 인공지능", "AI 도입 시청", "디지털전환 지자체", "스마트시티 AI"]
 
     for q in queries:
         for art in fetch_news(q, limit=15):
@@ -182,7 +203,7 @@ def _render_article_div(region, title, source, link, summary):
     return (
         '<div style="margin-bottom: 25px; line-height: 1.6; font-family: \'Malgun Gothic\', sans-serif;">\n'
         f'    <a href="{esc(safe_url(link))}" style="text-decoration: none; font-size: 15px; font-weight: bold; color: #03c75a;">📍 {esc(region)}</a><br>\n'
-        f'    <span style="font-weight: bold; font-size: 15px; color: #333;">📌 {esc(title)}</span> '
+        f'    <span style="font-weight: bold; font-size: 15px; color: #333;">□ {esc(title)}</span> '
         f'<span style="font-size: 13px; color: #888;">- {esc(source)}</span><br>\n'
         f'    <span style="font-size: 14px; color: #555;">✓ {esc(summary)}</span>\n'
         '</div>\n'
@@ -245,7 +266,7 @@ def summarize_with_gemini_to_html(articles: list, today_str: str) -> str:
             body += (
                 '<div style="margin-bottom: 20px;">\n'
                 f'    <a href="{esc(safe_url(art["link"]))}" style="text-decoration: none; font-weight: bold; color: #03c75a;">📍 원문보기</a><br>\n'
-                f'    <span style="font-weight: bold;">📌 {esc(art["title"])}</span> - {esc(art["source"])}<br>\n'
+                f'    <span style="font-weight: bold;">□ {esc(art["title"])}</span> - {esc(art["source"])}<br>\n'
                 '    <span>✓ 일시적인 AI 서버 혼잡으로 요약을 제공할 수 없습니다.</span>\n'
                 '</div>\n'
             )
