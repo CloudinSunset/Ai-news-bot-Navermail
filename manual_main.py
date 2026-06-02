@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "네이버 이동",
-        "title": "울산시, 6월부터 경제총조사 실시...사업체 6만곳 대상",
-        "link": "www.naver.com",
-        "source": "하세용"
+        "region": "서울",
+        "title": "동대문구, AI 사업 투명성 제고를 위한 'AI 사업 등록 관리제' 운영",
+        "link": "https://www.news1.kr/press/press-release/6184710",
+        "source": "뉴스원"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "서울AI재단, 연세대와 'AI 역량 격차' 진단 연구 착수",
+        "link": "https://www.news1.kr/press/press-release/6184500",
+        "source": "뉴스원"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전북",
+        "title": "전북, 피지컬AI 전주기 생태계 완결… 공공기관 유치 총력",
+        "link": "https://www.domin.co.kr/news/articleView.html?idxno=1557301",
+        "source": "전북도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경북",
+        "title": "경북도, ‘K-과학자’ 사업 본격 운영 공모사업 선정부터 과학강연까지 성과 확산",
+        "link": "https://www.kookminnews.com/117623",
+        "source": "국민뉴스"
     },
     {
         "region": "[지역]",
