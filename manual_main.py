@@ -31,7 +31,7 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 MY_NEWS_LIST = [
     {
         "region": "서울",
-        "title": ""영업기밀 유출 막는다"...제조 AI 안심 데이터 인프라 구축",
+        "title": "/"영업기밀 유출 막는다"/...제조 AI 안심 데이터 인프라 구축",
         "link": "https://www.mt.co.kr/economy/2026/06/05/2026060510494194349",
         "source": "머니투데이"
     },
