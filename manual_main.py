@@ -31,21 +31,21 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 MY_NEWS_LIST = [
     {
         "region": "서울",
-        "title": "KAIST 공간AI 및 XR 연계 차세대 가상융합 플랫폼 구축",
-        "link": "https://v.daum.net/v/20260603151738343",
-        "source": "디지털타임즈"
+        "title": ""영업기밀 유출 막는다"...제조 AI 안심 데이터 인프라 구축",
+        "link": "https://www.mt.co.kr/economy/2026/06/05/2026060510494194349",
+        "source": "머니투데이"
     },
     {
-        "region": "광주",
-        "title": "GIST AI 대학 신설 및 2027학년도 모집 정원 확대",
-        "link": "https://www.newsis.com/view/NISX20260604_0003655811",
-        "source": "뉴시스"
+        "region": "전라남도",
+        "title": "전남 장성에 3천959억 규모 첨단 데이터센터 들어선다",
+        "link": "http://imaeil.com/page/view/2026060416354479322",
+        "source": "매일신문"
     },
     {
-        "region": "경기도",
-        "title": "경기도 건설현장 AI 도입 및 중소건설기업 활성화 방안 모색",
-        "link": "https://www.kgmail.kr/news/articleView.html?idxno=623404",
-        "source": "경기매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
