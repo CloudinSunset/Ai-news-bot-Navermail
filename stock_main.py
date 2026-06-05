@@ -33,7 +33,7 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 # 1. 1순위: 관심 주식 종목 및 기업
 TARGET_COMPANIES = [
     "브로드컴", "TSMC", "솔리드파워", "현대차", 
-    "크래프톤", "DSC인베스트먼트", "알파벳", "퓨리오사AI"
+    "크래프톤", "DSC인베스트먼트", "알파벳", "구글", "퓨리오사AI"
 ]
 
 # 2. 2순위: 종목 뉴스가 부족할 때 채울 관심 산업 분야
