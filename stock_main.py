@@ -124,17 +124,26 @@ def calculate_title_similarity(title1: str, title2: str) -> float:
 def collect_filtered_articles(target_total: int = 10):
     all_articles = []
     
-    # [Step 1] 관심 주식 종목 뉴스 우선 수집
+# [Step 1] 관심 주식 종목 뉴스 우선 수집
     print("👉 관심 기업 뉴스 수집 중...")
     for company in TARGET_COMPANIES:
-        # 각 종목당 최신 3개씩 가져와서 검사
-        for art in fetch_news(company, limit=3):
+        valid_count = 0  # 해당 기업에서 유효하게 추가된 기사 수를 세는 카운터
+
+        # 넉넉하게 상위 5개 정도 가져와서 필터링 검사를 시작
+        for art in fetch_news(company, limit=5):
             if is_noise(art["title"]): continue
             
             # 중복 검사
             is_duplicate = any(calculate_title_similarity(art["title"], existing["title"]) >= 0.6 for existing in all_articles)
+            
             if not is_duplicate:
                 all_articles.append(art)
+                valid_count += 1  # 통과해서 리포트에 추가될 때마다 1 증가
+                
+            # 쓸만한 기사를 2개 찾았다면 더 이상 찾지 않고 다음 기업으로 넘어감
+            if valid_count >= 2:
+                break
+                
         time.sleep(0.3)
 
     # [Step 2] 종목 뉴스가 목표치(target_total)보다 적을 경우, 산업 뉴스 추가 수집
