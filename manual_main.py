@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "인천",
-        "title": "인천도시공사, ‘도시개발 공기업 AX 심포지엄’ 개최",
-        "link": "https://www.wooriilbo.com/news/article.html?no=100857",
-        "source": "우리일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "호남 제조업 AI 전환 시동…스마트기술기업 뭉쳤다",
-        "link": "https://www.namdonews.com/news/articleView.html?idxno=912827",
-        "source": "남도일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "충북도, 융합바이오 제조기업 AI 전환 지원",
-        "link": "https://v.daum.net/v/20260607180936447?f=p",
-        "source": "중도일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청남도",
-        "title": "충남도, 24시간 인공지능 안전망 구축",
-        "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2420314",
-        "source": "충청일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "코트라, 경북 수출기업 AI 마케팅 지원",
-        "link": "https://biz.heraldcorp.com/article/10765911",
-        "source": "헤럴드경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남도, 첨단제조로봇 실증사업 공모 11개 과제 선정",
-        "link": "https://www.yna.co.kr/view/AKR20260607020000052",
-        "source": "연합뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
