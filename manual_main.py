@@ -37,9 +37,9 @@ MY_NEWS_LIST = [
     },
     {
         "region": "광주",
-        "title": "제조업 AI 전환 본격화...광주·전남·제주 기업협의회 출범",
-        "link": "http://www.homae.co.kr/article.php?aid=1780844400881631003",
-        "source": "호남매일"
+        "title": "호남 제조업 AI 전환 시동…스마트기술기업 뭉쳤다",
+        "link": "https://www.namdonews.com/news/articleView.html?idxno=912827",
+        "source": "남도일보"
     },
     {
         "region": "충청북도",
