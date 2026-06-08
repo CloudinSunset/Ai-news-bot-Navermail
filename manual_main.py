@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": '"영업기밀 유출 막는다"...제조 AI 안심 데이터 인프라 구축',
-        "link": "https://www.mt.co.kr/economy/2026/06/05/2026060510494194349",
-        "source": "머니투데이"
+        "region": "인천",
+        "title": "인천도시공사, ‘도시개발 공기업 AX 심포지엄’ 개최",
+        "link": "https://www.wooriilbo.com/news/article.html?no=100857",
+        "source": "우리일보"
     },
     {
-        "region": "전라남도",
-        "title": "전남 장성에 3천959억 규모 첨단 데이터센터 들어선다",
-        "link": "http://imaeil.com/page/view/2026060416354479322",
-        "source": "매일신문"
+        "region": "광주",
+        "title": "제조업 AI 전환 본격화...광주·전남·제주 기업협의회 출범",
+        "link": "http://www.homae.co.kr/article.php?aid=1780844400881631003",
+        "source": "호남매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "충북도, 융합바이오 제조기업 AI 전환 지원",
+        "link": "https://v.daum.net/v/20260607180936447?f=p",
+        "source": "중도일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남도, 24시간 인공지능 안전망 구축",
+        "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2420314",
+        "source": "충청일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "코트라, 경북 수출기업 AI 마케팅 지원",
+        "link": "https://biz.heraldcorp.com/article/10765911",
+        "source": "헤럴드경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남도, 첨단제조로봇 실증사업 공모 11개 과제 선정",
+        "link": "https://www.yna.co.kr/view/AKR20260607020000052",
+        "source": "연합뉴스"
     },
     {
         "region": "[지역]",
