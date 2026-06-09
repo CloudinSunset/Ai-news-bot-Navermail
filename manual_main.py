@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "부산시, 산업통상부 '2026년 지역전략산업 기반고도화 사업' 공모 선정",
+        "link": "https://www.hkilbo.kr/news/articleView.html?idxno=126152",
+        "source": "한경일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "대구 성서산단, 2026 AX 실증산단 공모 총력",
+        "link": "https://m.etnews.com/20260604000189?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "AI부터 방산·돌봄까지… 경북도, 앵커사업 성과 가시화",
+        "link": "https://www.kbsm.net/news/view.php?idx=522139&site=local_paper",
+        "source": "경북신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "진주·창원 기계공고 2026 협약형 특성화고 선정...항공·AI 인재 육성",
+        "link": "https://www.sedaily.com/article/20053386",
+        "source": "서울경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남 미래산업 R&D에 320억 투입…혁신기업 35곳 선정",
+        "link": "https://www.newsjinju.kr/news/articleView.html?idxno=58329",
+        "source": "진주신문"
     },
     {
         "region": "[지역]",
