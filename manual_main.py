@@ -31,39 +31,39 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 MY_NEWS_LIST = [
     {
         "region": "부산",
-        "title": "부산시, 산업통상부 '2026년 지역전략산업 기반고도화 사업' 공모 선정",
-        "link": "https://www.hkilbo.kr/news/articleView.html?idxno=126152",
-        "source": "한경일보"
+        "title": "부산 ‘조선기자재 M.AX’ 거점화…‘K-해양 AI벨트’도 시동",
+        "link": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260610.22011002536",
+        "source": "국제신문"
     },
     {
         "region": "대구",
-        "title": "대구 성서산단, 2026 AX 실증산단 공모 총력",
-        "link": "https://m.etnews.com/20260604000189?obj=Tzo4OiJzdGRDbGFzcyI6Mjp7czo3OiJyZWZlcmVyIjtOO3M6NzoiZm9yd2FyZCI7czoxMzoid2ViIHRvIG1vYmlsZSI7fQ%3D%3D",
+        "title": "대구교통공사, 전국 최초 국산 AI 반도체 기반 ‘스마트스테이션’ 구축한다",
+        "link": "https://www.kbmaeil.com/article/20260609500496",
+        "source": "경북매일"
+    },
+    {
+        "region": "강원도",
+        "title": "강원도, 의료 AX 실증허브 본격 가동…AI 기반 암 특화 의료산업 육성 속도",
+        "link": "https://v.daum.net/v/20260610092311962",
         "source": "전자신문"
     },
     {
+        "region": "충청남도",
+        "title": "서부발전, 발전 현장 AX 이끌 전문가 그룹 확대",
+        "link": "http://www.m-i.kr/news/articleView.html?idxno=1380069",
+        "source": "매일일보"
+    },
+    {
+        "region": "전라북도",
+        "title": "군산 제조현장에 AI를 입히다…주력산업 AX 혁신 본격화",
+        "link": "https://www.jbjnews.com/news/articleView.html?idxno=318210",
+        "source": "전북제일신문"
+    },
+    {
         "region": "경상북도",
-        "title": "AI부터 방산·돌봄까지… 경북도, 앵커사업 성과 가시화",
-        "link": "https://www.kbsm.net/news/view.php?idx=522139&site=local_paper",
-        "source": "경북신문"
-    },
-    {
-        "region": "경상남도",
-        "title": "진주·창원 기계공고 2026 협약형 특성화고 선정...항공·AI 인재 육성",
-        "link": "https://www.sedaily.com/article/20053386",
-        "source": "서울경제"
-    },
-    {
-        "region": "경상남도",
-        "title": "경남 미래산업 R&D에 320억 투입…혁신기업 35곳 선정",
-        "link": "https://www.newsjinju.kr/news/articleView.html?idxno=58329",
-        "source": "진주신문"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "title": "경북도, 글로벌 양자협력 거점 본격 출범",
+        "link": "http://www.newgbnews.com/news/view.php?idx=401207",
+        "source": "일간경북신문"
     },
     {
         "region": "[지역]",
