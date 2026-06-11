@@ -42,7 +42,7 @@ MY_NEWS_LIST = [
         "source": "뉴시스"
     },
     {
-        "region": "경상북도",
+        "region": "경상남도",
         "title": '“경남, 주력산업 기반으로 양자산업 시대 연다” 경남도, 조선·방산·우주항공·원전 연계 양자클러스터 전략 본격화"',
         "link": "https://www.knana.kr/news/articleView.html?idxno=362273",
         "source": "경남뉴스통신"
@@ -54,7 +54,7 @@ MY_NEWS_LIST = [
         "source": "일간경북신문"
     },
     {
-        "region": "경상남도",
+        "region": "경상북도",
         "title": "경주시, AI‧XR 기반 역사문화 관광 서비스 개발 본격화",
         "link": "https://skbnews.kr/news/article.html?no=61542",
         "source": "신경북뉴스"
