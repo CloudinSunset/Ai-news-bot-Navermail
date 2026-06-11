@@ -149,7 +149,7 @@ def summarize_and_build_html(articles: list, today_str: str) -> str:
         except Exception as e:
             print(f"[WARN] Gemini 요약 실패 (시도 {attempt + 1}/{max_retries}): {e}", flush=True)
             if attempt < max_retries - 1:
-                time.sleep(10) 
+                time.sleep(30) 
             else:
                 print("[ERROR] 요약 실패. 원문만 전송합니다.", flush=True)
 
