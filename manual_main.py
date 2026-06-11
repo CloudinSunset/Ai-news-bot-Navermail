@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산 ‘조선기자재 M.AX’ 거점화…‘K-해양 AI벨트’도 시동",
-        "link": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0200&key=20260610.22011002536",
-        "source": "국제신문"
-    },
-    {
-        "region": "대구",
-        "title": "대구교통공사, 전국 최초 국산 AI 반도체 기반 ‘스마트스테이션’ 구축한다",
-        "link": "https://www.kbmaeil.com/article/20260609500496",
-        "source": "경북매일"
-    },
-    {
-        "region": "강원도",
-        "title": "강원도, 의료 AX 실증허브 본격 가동…AI 기반 암 특화 의료산업 육성 속도",
-        "link": "https://v.daum.net/v/20260610092311962",
-        "source": "전자신문"
-    },
-    {
-        "region": "충청남도",
-        "title": "서부발전, 발전 현장 AX 이끌 전문가 그룹 확대",
-        "link": "http://www.m-i.kr/news/articleView.html?idxno=1380069",
-        "source": "매일일보"
-    },
-    {
         "region": "전라북도",
-        "title": "군산 제조현장에 AI를 입히다…주력산업 AX 혁신 본격화",
-        "link": "https://www.jbjnews.com/news/articleView.html?idxno=318210",
-        "source": "전북제일신문"
+        "title": "전북도, 김제에 426억 투입 건설로봇 실증거점 구축",
+        "link": "https://www.jeonbuktimes.co.kr/news_view.jsp?ncd=225333",
+        "source": "전북타임즈"
+    },
+    {
+        "region": "전라남도",
+        "title": "전남광주, 반도체 팹 유치 공동전선…미래산업 전환 '승부수'",
+        "link": "https://www.newsis.com/view/NISX20260610_0003663858",
+        "source": "뉴시스"
     },
     {
         "region": "경상북도",
-        "title": "경북도, 글로벌 양자협력 거점 본격 출범",
-        "link": "http://www.newgbnews.com/news/view.php?idx=401207",
+        "title": '“경남, 주력산업 기반으로 양자산업 시대 연다” 경남도, 조선·방산·우주항공·원전 연계 양자클러스터 전략 본격화"',
+        "link": "https://www.knana.kr/news/articleView.html?idxno=362273",
+        "source": "경남뉴스통신"
+    },
+    {
+        "region": "경상북도",
+        "title": "안동, AI기반 예측 영농 체계 본격 구축",
+        "link": "http://www.newgbnews.com/news/view.php?idx=401321",
         "source": "일간경북신문"
+    },
+    {
+        "region": "경상남도",
+        "title": "경주시, AI‧XR 기반 역사문화 관광 서비스 개발 본격화",
+        "link": "https://skbnews.kr/news/article.html?no=61542",
+        "source": "신경북뉴스"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
