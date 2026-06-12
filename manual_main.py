@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
+        "region": "서울",
+        "title": "제조업 명장 노하우, AI로 살린다…암묵지 데이터 구축에 480억 투입",
+        "link": "https://www.mt.co.kr/economy/2026/06/12/2026061210401082835",
+        "source": "머니투데이"
+    },
+    {
+        "region": "인천",
+        "title": "인천공항, AI 기반 ‘항공 인프라 고속도로’ 깐다…디지털 지능형 공항 선언",
+        "link": "https://www.incheonilbo.com/news/articleView.html?idxno=1324964",
+        "source": "인천일보"
+    },
+    {
+        "region": "대전",
+        "title": "대전교통공사, 전사적 AI 대전환 선언...경영혁신 본격 시동",
+        "link": "https://www.newscheck.co.kr/news/articleView.html?idxno=60094",
+        "source": "뉴스체크"
+    },
+    {
+        "region": "경기도",
+        "title": "국토부, AI 스마트도시 본격 확대…수원·부산·성남 공모 선정",
+        "link": "https://www.mt.co.kr/estate/2026/06/12/2026061207515421511",
+        "source": "머니투데이"
+    },
+    {
         "region": "전라북도",
-        "title": "전북도, 김제에 426억 투입 건설로봇 실증거점 구축",
-        "link": "https://www.jeonbuktimes.co.kr/news_view.jsp?ncd=225333",
-        "source": "전북타임즈"
-    },
-    {
-        "region": "전라남도",
-        "title": "전남광주, 반도체 팹 유치 공동전선…미래산업 전환 '승부수'",
-        "link": "https://www.newsis.com/view/NISX20260610_0003663858",
-        "source": "뉴시스"
-    },
-    {
-        "region": "경상남도",
-        "title": '“경남, 주력산업 기반으로 양자산업 시대 연다” 경남도, 조선·방산·우주항공·원전 연계 양자클러스터 전략 본격화"',
-        "link": "https://www.knana.kr/news/articleView.html?idxno=362273",
-        "source": "경남뉴스통신"
-    },
-    {
-        "region": "경상북도",
-        "title": "안동, AI기반 예측 영농 체계 본격 구축",
-        "link": "http://www.newgbnews.com/news/view.php?idx=401321",
-        "source": "일간경북신문"
-    },
-    {
-        "region": "경상북도",
-        "title": "경주시, AI‧XR 기반 역사문화 관광 서비스 개발 본격화",
-        "link": "https://skbnews.kr/news/article.html?no=61542",
-        "source": "신경북뉴스"
+        "title": "전북대, AI건설·로봇혁신센터로 스마트건설 거점화",
+        "link": "https://www.etoday.co.kr/news/view/2592909",
+        "source": "이투데이"
     },
     {
         "region": "[지역]",
