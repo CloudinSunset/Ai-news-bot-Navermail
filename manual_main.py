@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "제조업 명장 노하우, AI로 살린다…암묵지 데이터 구축에 480억 투입",
-        "link": "https://www.mt.co.kr/economy/2026/06/12/2026061210401082835",
-        "source": "머니투데이"
+        "region": "부산",
+        "title": "부산 센텀시티, AI 기반 스마트도시 특화단지 선정···2028년까지 168억 원 투입",
+        "link": "https://thegnnews.com/View.aspx?No=4111383",
+        "source": "더경남뉴스"
     },
     {
-        "region": "인천",
-        "title": "인천공항, AI 기반 ‘항공 인프라 고속도로’ 깐다…디지털 지능형 공항 선언",
-        "link": "https://www.incheonilbo.com/news/articleView.html?idxno=1324964",
-        "source": "인천일보"
-    },
-    {
-        "region": "대전",
-        "title": "대전교통공사, 전사적 AI 대전환 선언...경영혁신 본격 시동",
-        "link": "https://www.newscheck.co.kr/news/articleView.html?idxno=60094",
-        "source": "뉴스체크"
-    },
-    {
-        "region": "경기도",
-        "title": "국토부, AI 스마트도시 본격 확대…수원·부산·성남 공모 선정",
-        "link": "https://www.mt.co.kr/estate/2026/06/12/2026061207515421511",
-        "source": "머니투데이"
+        "region": "충청남도",
+        "title": "태안군, '2026 스마트도시 데이터허브 시범솔루션 발굴사업' 선정",
+        "link": "https://www.daejonilbo.com/news/articleView.html?idxno=2281575",
+        "source": "대전일보"
     },
     {
         "region": "전라북도",
-        "title": "전북대, AI건설·로봇혁신센터로 스마트건설 거점화",
-        "link": "https://www.etoday.co.kr/news/view/2592909",
-        "source": "이투데이"
+        "title": "전북·인천·충남 ‘방산혁신클러스터’ 구축 시동",
+        "link": "https://www.segye.com/newsView/20260614507317",
+        "source": "세계일보"
+    },
+    {
+        "region": "경상남도",
+        "title": "진주시, 디지털·AI 기반 스마트 복합도시 조성 속도",
+        "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1265292",
+        "source": "전국매일신문"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
