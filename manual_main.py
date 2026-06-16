@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산 센텀시티, AI 기반 스마트도시 특화단지 선정···2028년까지 168억 원 투입",
-        "link": "https://thegnnews.com/View.aspx?No=4111383",
-        "source": "더경남뉴스"
+        "region": "경기도",
+        "title": "성남시, 스마트도시 특화단지 선정…AI 헬스케어 도시 조성 본격화",
+        "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1093357",
+        "source": "디스커버리뉴스"
     },
     {
-        "region": "충청남도",
-        "title": "태안군, '2026 스마트도시 데이터허브 시범솔루션 발굴사업' 선정",
-        "link": "https://www.daejonilbo.com/news/articleView.html?idxno=2281575",
-        "source": "대전일보"
-    },
-    {
-        "region": "전라북도",
-        "title": "전북·인천·충남 ‘방산혁신클러스터’ 구축 시동",
-        "link": "https://www.segye.com/newsView/20260614507317",
-        "source": "세계일보"
+        "region": "강원도",
+        "title": "강원 AI 사업단 출범...지역 주도형 AI 대전환 본격화",
+        "link": "https://www.etnews.com/20260616000038",
+        "source": "전자신문"
     },
     {
         "region": "경상남도",
-        "title": "진주시, 디지털·AI 기반 스마트 복합도시 조성 속도",
-        "link": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1265292",
-        "source": "전국매일신문"
+        "title": "경남도, 인공지능·빅데이터 기반 스마트 관광 속도",
+        "link": "https://www.ulsanpress.net/news/articleView.html?idxno=577127",
+        "source": "울산신문"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
