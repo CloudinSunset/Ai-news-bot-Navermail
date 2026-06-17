@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "경기도",
-        "title": "성남시, 스마트도시 특화단지 선정…AI 헬스케어 도시 조성 본격화",
-        "link": "https://www.discoverynews.kr/news/articleView.html?idxno=1093357",
-        "source": "디스커버리뉴스"
+        "region": "서울",
+        "title": "서초구, 'AI AGENT OFFICE' 행정 업무에 도입…전국 최초",
+        "link": "https://www.asiae.co.kr/article/2026061608113293605",
+        "source": "아시아경제"
     },
     {
-        "region": "강원도",
-        "title": "강원 AI 사업단 출범...지역 주도형 AI 대전환 본격화",
-        "link": "https://www.etnews.com/20260616000038",
-        "source": "전자신문"
+        "region": "대구",
+        "title": "DGIST, AI 휴머노이드 신규 과제 선정...77억 5000만원 확보",
+        "link": "https://www.newsis.com/view/NISX20260617_0003671891",
+        "source": "뉴시스"
+    },
+    {
+        "region": "전라북도",
+        "title": "전북교육청, AI‧디지털 교육 현장 안착·운영 내실화 밀착 지원",
+        "link": "https://www.mjeonbuk.com/news/articleView.html?idxno=139733",
+        "source": "아시아뉴스전북"
+    },
+    {
+        "region": "경상북도",
+        "title": "포항에 ‘제조 온디바이스 AI 실증기반’ 구축…AX 확산",
+        "link": "https://www.sedaily.com/article/20056821",
+        "source": "서울경제"
     },
     {
         "region": "경상남도",
-        "title": "경남도, 인공지능·빅데이터 기반 스마트 관광 속도",
-        "link": "https://www.ulsanpress.net/news/articleView.html?idxno=577127",
-        "source": "울산신문"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "title": "김해시, ‘첨단제조로봇 실증사업’ 5건 확보… 경남 최다",
+        "link": "https://www.metroseoul.co.kr/article/20260616500546",
+        "source": "메트로신문"
     },
     {
         "region": "[지역]",
