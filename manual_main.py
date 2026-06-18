@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서초구, 'AI AGENT OFFICE' 행정 업무에 도입…전국 최초",
-        "link": "https://www.asiae.co.kr/article/2026061608113293605",
-        "source": "아시아경제"
+        "region": "인천",
+        "title": "인천시교육청, 대만 신베이시교육국과 AI 미래교육 협력 방안 논의",
+        "link": "https://www.mediaic.co.kr/news/articleView.html?idxno=82906",
+        "source": "미디어인천신문"
     },
     {
-        "region": "대구",
-        "title": "DGIST, AI 휴머노이드 신규 과제 선정...77억 5000만원 확보",
-        "link": "https://www.newsis.com/view/NISX20260617_0003671891",
-        "source": "뉴시스"
+        "region": "광주",
+        "title": "광주시, 평동산단 ‘용접 뿌리산업 특화단지’ 지정…AI 기반 산업혁신 본격화",
+        "link": "https://www.siminsori.com/news/articleView.html?idxno=321855",
+        "source": "시민의소리"
     },
     {
-        "region": "전라북도",
-        "title": "전북교육청, AI‧디지털 교육 현장 안착·운영 내실화 밀착 지원",
-        "link": "https://www.mjeonbuk.com/news/articleView.html?idxno=139733",
-        "source": "아시아뉴스전북"
+        "region": "경기도",
+        "title": "안산교육지원청, 한양대 ERICA SW·AI융합교육원과 AI·디지털 교육 MOU 체결",
+        "link": "https://www.hksisaeconomy.com/news/article.html?no=1160031",
+        "source": "한국시사경제"
     },
     {
         "region": "경상북도",
-        "title": "포항에 ‘제조 온디바이스 AI 실증기반’ 구축…AX 확산",
-        "link": "https://www.sedaily.com/article/20056821",
-        "source": "서울경제"
+        "title": "경북 AI·로봇 혁신 본격화…산업대전환 이끌 미래 먹거리 발굴",
+        "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075838",
+        "source": "경북일보"
     },
     {
-        "region": "경상남도",
-        "title": "김해시, ‘첨단제조로봇 실증사업’ 5건 확보… 경남 최다",
-        "link": "https://www.metroseoul.co.kr/article/20260616500546",
-        "source": "메트로신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
