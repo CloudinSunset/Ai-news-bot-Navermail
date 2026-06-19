@@ -54,16 +54,16 @@ MY_NEWS_LIST = [
         "source": "서울신문"
     },
     {
-        "region": "전라북도",
-        "title": "전북, ‘피지컬AI 특별수도’ 선언…새만금 중심 미래산업 승부수",
-        "link": "https://www.jjan.kr/article/20260618500498",
-        "source": "전북일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "그래핀·전자유리·AI기반 자율제조…경북도, 미래 신산업 기반구축 가속화",
-        "link": "http://www.munhwa.com/article/11596630",
-        "source": "문화일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
