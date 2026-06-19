@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "인천",
-        "title": "인천시교육청, 대만 신베이시교육국과 AI 미래교육 협력 방안 논의",
-        "link": "https://www.mediaic.co.kr/news/articleView.html?idxno=82906",
-        "source": "미디어인천신문"
-    },
-    {
-        "region": "광주",
-        "title": "광주시, 평동산단 ‘용접 뿌리산업 특화단지’ 지정…AI 기반 산업혁신 본격화",
-        "link": "https://www.siminsori.com/news/articleView.html?idxno=321855",
-        "source": "시민의소리"
+        "region": "서울",
+        "title": "제조업 AI 전환 속도전… 車·선박·로봇에 AI 심는다",
+        "link": "https://www.newscj.com/news/articleView.html?idxno=3410242",
+        "source": "천지일보"
     },
     {
         "region": "경기도",
-        "title": "안산교육지원청, 한양대 ERICA SW·AI융합교육원과 AI·디지털 교육 MOU 체결",
-        "link": "https://www.hksisaeconomy.com/news/article.html?no=1160031",
-        "source": "한국시사경제"
+        "title": "성남시, ‘양자컴퓨팅 플랫폼 구축 사업’ 선정…국비 100억 확보",
+        "link": "https://www.sedaily.com/article/20057610",
+        "source": "서울경제"
+    },
+    {
+        "region": "경기도",
+        "title": "수원특례시, '2026년 에이아이(AI) 로봇 실증사업(서비스분야)' 공모 선정...국비 1억 원 확보",
+        "link": "https://www.kgmail.kr/news/articleView.html?idxno=626597",
+        "source": "경기매일"
+    },
+    {
+        "region": "강원도",
+        "title": "원주·천안·아산에 대한민국 첫 ‘AI 시티’ 들어선다",
+        "link": "https://www.seoul.co.kr/news/publicnews/local_govern/news_local/2026/06/19/20260619019002",
+        "source": "서울신문"
+    },
+    {
+        "region": "전라북도",
+        "title": "전북, ‘피지컬AI 특별수도’ 선언…새만금 중심 미래산업 승부수",
+        "link": "https://www.jjan.kr/article/20260618500498",
+        "source": "전북일보"
     },
     {
         "region": "경상북도",
-        "title": "경북 AI·로봇 혁신 본격화…산업대전환 이끌 미래 먹거리 발굴",
-        "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4075838",
-        "source": "경북일보"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "title": "그래핀·전자유리·AI기반 자율제조…경북도, 미래 신산업 기반구축 가속화",
+        "link": "http://www.munhwa.com/article/11596630",
+        "source": "문화일보"
     },
     {
         "region": "[지역]",
