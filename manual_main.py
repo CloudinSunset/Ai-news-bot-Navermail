@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "제조업 AI 전환 속도전… 車·선박·로봇에 AI 심는다",
-        "link": "https://www.newscj.com/news/articleView.html?idxno=3410242",
-        "source": "천지일보"
+        "region": "대전",
+        "title": "한남대, 268억 규모 ‘국방 AX 거점’ 사업 선정",
+        "link": "https://www.dailycc.net/news/articleView.html?idxno=869273",
+        "source": "충청신문"
     },
     {
         "region": "경기도",
-        "title": "성남시, ‘양자컴퓨팅 플랫폼 구축 사업’ 선정…국비 100억 확보",
-        "link": "https://www.sedaily.com/article/20057610",
-        "source": "서울경제"
+        "title": '경기도 4차산업혁명센터, 유럽 AI 우수센터와 전략적 협약 체결..."글로벌 AI 협력 네트워크 확대"',
+        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606221007512060194",
+        "source": "대한경제"
     },
     {
-        "region": "경기도",
-        "title": "수원특례시, '2026년 에이아이(AI) 로봇 실증사업(서비스분야)' 공모 선정...국비 1억 원 확보",
-        "link": "https://www.kgmail.kr/news/articleView.html?idxno=626597",
-        "source": "경기매일"
+        "region": "충청북도",
+        "title": "전국 유일 바이오 특화 오송 'AI 데이터센터' 구축 본격화…내년 첫 연구개발 사업 추진",
+        "link": "https://www.inews365.com/news/article.html?no=924260",
+        "source": "충북일보"
     },
     {
-        "region": "강원도",
-        "title": "원주·천안·아산에 대한민국 첫 ‘AI 시티’ 들어선다",
-        "link": "https://www.seoul.co.kr/news/publicnews/local_govern/news_local/2026/06/19/20260619019002",
-        "source": "서울신문"
+        "region": "충청남도",
+        "title": "디토닉, 천안·아산 'AI 특화 시범도시' 구축 참여…6109억원 규모",
+        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=02528886645484344",
+        "source": "이데일리"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, ‘지역거점 정보보호 클러스터’ 공모 선정",
+        "link": "http://www.gminews.net/default/index_view_page.php?part_idx=7&idx=55048",
+        "source": "경북문화신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "AI 인재 육성 속도…중진공, 산업특화 AI 계약학과 13곳 선정",
+        "link": "https://www.sidae.com/article/2026062115085065503",
+        "source": "동행미디어"
     },
     {
         "region": "[지역]",
