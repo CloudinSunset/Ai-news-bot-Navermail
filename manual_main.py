@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "대전",
-        "title": "한남대, 268억 규모 ‘국방 AX 거점’ 사업 선정",
-        "link": "https://www.dailycc.net/news/articleView.html?idxno=869273",
-        "source": "충청신문"
+        "region": "대구",
+        "title": "대구 패션봉제산업에 AI 입힌다...자율제조센터 구축",
+        "link": "https://imaeil.com/page/view/2026062308342818839",
+        "source": "매일신문"
     },
     {
         "region": "경기도",
-        "title": '경기도 4차산업혁명센터, 유럽 AI 우수센터와 전략적 협약 체결..."글로벌 AI 협력 네트워크 확대"',
-        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606221007512060194",
-        "source": "대한경제"
-    },
-    {
-        "region": "충청북도",
-        "title": "전국 유일 바이오 특화 오송 'AI 데이터센터' 구축 본격화…내년 첫 연구개발 사업 추진",
-        "link": "https://www.inews365.com/news/article.html?no=924260",
-        "source": "충북일보"
-    },
-    {
-        "region": "충청남도",
-        "title": "디토닉, 천안·아산 'AI 특화 시범도시' 구축 참여…6109억원 규모",
-        "link": "https://www.edaily.co.kr/news/newspath.asp?newsid=02528886645484344",
-        "source": "이데일리"
+        "title": "시흥시, 미래기술학교 개강...미래산업 전문인력 양성 본격화",
+        "link": "https://www.kgmail.kr/news/articleView.html?idxno=627263",
+        "source": "경기매일"
     },
     {
         "region": "경상북도",
-        "title": "경북도, ‘지역거점 정보보호 클러스터’ 공모 선정",
-        "link": "http://www.gminews.net/default/index_view_page.php?part_idx=7&idx=55048",
-        "source": "경북문화신문"
+        "title": "경북, AI·항공·바이오 인재양성 600억 투입",
+        "link": "https://www.munhwa.com/article/11597495",
+        "source": "문화일보"
     },
     {
-        "region": "경상남도",
-        "title": "AI 인재 육성 속도…중진공, 산업특화 AI 계약학과 13곳 선정",
-        "link": "https://www.sidae.com/article/2026062115085065503",
-        "source": "동행미디어"
+        "region": "경상북도",
+        "title": "대경지방공기업협, AI기반 경영혁신·디지털 전환 공동협력 업무협약",
+        "link": "https://m.smnews.co.kr/view.php?idx=297045",
+        "source": "세명일보"
+    },
+    {
+        "region": "경상북도",
+        "title": "경북 제조업 AI 대전환 시동…이차전지 혁신모델 전 산업 확산",
+        "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4076249",
+        "source": "경북일보"
+    },
+    {
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
