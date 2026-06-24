@@ -30,10 +30,10 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "산업부, M.AX 본격 확산…제조공정 넘어 공급망·경영 의사결정까지 AI 혁신",
-        "link": "https://www.the-tech.co.kr/news/article.html?no=41647",
-        "source": "테크미디어"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
         "region": "서울",
