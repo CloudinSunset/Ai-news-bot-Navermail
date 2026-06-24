@@ -36,46 +36,46 @@ MY_NEWS_LIST = [
         "source": "언론사"
     },
     {
-        "region": "서울",
-        "title": 'NIA·KOSA, AX 협력 과제 공동 발굴…"공공 AX 확산·AI 역량 강화"',
-        "link": "https://www.etnews.com/20260624000083",
-        "source": "전자신문"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "서울",
-        "title": "교육부, BK21 신규 시범사업 선정…AI융합·지역연합 연구단 지원",
-        "link": "https://www.etnews.com/20260624000105",
-        "source": "전자신문"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "대구",
-        "title": "대구 공공기관 고민, 지역 AI가 푼다... DIP, 제1차 대구 공공 AX혁신 실증 협의체 개최",
-        "link": "https://www.ynenews.kr/news/articleView.html?idxno=79549",
-        "source": "영남경제신문"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "경기도",
-        "title": "시흥시정연구원, 차세대융합기술연구원·시흥산업진흥원과 피지컬 AI 협력체계 구축",
-        "link": "http://ghottimenews.com/news/article.html?no=412056",
-        "source": "경기핫타임뉴스"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "경기도",
-        "title": "수원시, AI로 도시 새판…공모 7건 선정에 846억원 재원도 확보",
-        "link": "https://www.etnews.com/20260624000056",
-        "source": "전자신문"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "전라북도",
-        "title": "전북도, 자체 구축 '전북AI'…최신 모델 '미니맥스 M3'로 고도화",
-        "link": "https://www.news1.kr/local/jeonbuk/6206637",
-        "source": "news1"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     },
     {
-        "region": "경상북도",
-        "title": "포항시, 산업 AI 솔루션 실증·확산 지원사업 선정…국비 21억원 확보",
-        "link": "https://www.ajunews.com/view/20260624053459027",
-        "source": "아주경제"
+        "region": "지역",
+        "title": "제목",
+        "link": "링크",
+        "source": "언론사"
     }
 ]
 
