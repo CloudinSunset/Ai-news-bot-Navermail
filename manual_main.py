@@ -30,52 +30,52 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "서울",
+        "title": "국토부, AI 기반 국토교통 서비스 26개 선정... 2년간 750억원 지원",
+        "link": "http://www.fnnews.com/news/202606241741321818",
+        "source": "파이낸셜뉴스"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "경기도",
+        "title": "성남시, '피지컬 AI 통합검증센터' 구축...국비 100억 확보",
+        "link": "https://www.news1.kr/local/gyeonggi/6207736",
+        "source": "news1"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "강원도",
+        "title": "보령시, AI 활용 고독사 예방 나선다",
+        "link": "https://www.sj-ccnews.com/news/articleView.html?idxno=59848",
+        "source": "세종충청뉴스"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "충청남도",
+        "title": "801억 투입 ‘AI·국방로봇 사업’의 산학융합을 선도한다",
+        "link": "https://www.hankookilbo.com/news/article/A2026062509160003788",
+        "source": "한국일보"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "지역",
-        "title": "제목",
-        "link": "링크",
-        "source": "언론사"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     }
 ]
 
