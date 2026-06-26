@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "카카오, 4대 과기원과 청소년 유니콘 창업가 발굴한다",
+        "link": "http://www.asiae.co.kr/news/view.htm?idxno=2026062609392002381",
+        "source": "아시아경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천공항공사, AI-PORT 조성 본격 시동",
+        "link": "https://www.sisaone.kr/news/article.html?no=2262469",
+        "source": "시사1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남TP, ‘충남 AX혁신위원회’ 출범…1조원 규모 AI 대전환 사업 본격 시동",
+        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202606251023549940726",
+        "source": "대한경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북교육청, AI·디지털 과학탐구 환경 조성…121개교 선정·지원",
+        "link": "https://www.news1.kr/local/jeonbuk/6208458",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "구미시, 산업AI 에이전트 공모사업 선정…제조현장 물류혁신 본격화",
+        "link": "https://www.thebestnews.kr/news/articleView.html?idxno=448454",
+        "source": "더최고신문"
     },
     {
         "region": "[지역]",
