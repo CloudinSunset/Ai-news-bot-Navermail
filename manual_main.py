@@ -30,46 +30,46 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "인천",
-        "title": "인천TP, 인천 양자-바이오 협의체 1차 회의 개최",
-        "link": "https://www.kgmail.kr/news/articleView.html?idxno=628575",
-        "source": "경기매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "KT, 경기도청에 '5G 업무망 거점형' 첫 적용",
-        "link": "http://www.asiae.co.kr/news/view.htm?idxno=2026062909311137532",
-        "source": "아시아경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "수원시, 온디바이스 AI 화재탐지 실증사업 추진",
-        "link": "https://www.etnews.com/20260629000004",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "화성시, AI 재난안전지도 구축 및 화재·침수 위험 통합 관리",
-        "link": "https://www.etnews.com/20260629000009",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "충북도, 국비 146억 확보 및 '첨단소재 특화형 AX 플랫폼' 구축 시동",
-        "link": "http://www.joongdo.co.kr/web/view.php?key=20260629010007878",
-        "source": "중도일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청남도",
-        "title": '천안시, 중소 제조기업 "AI 대전환" 본격 지원',
-        "link": "http://www.dailyculture.kr/2113331",
-        "source": "문화매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북, 철강 제조공정 AI전환 탄력...국비 21억원 확보",
-        "link": "http://www.gminews.net/default/index_view_page.php?part_idx=243&idx=55084",
-        "source": "경북문화신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
