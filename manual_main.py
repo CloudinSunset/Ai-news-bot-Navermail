@@ -61,7 +61,7 @@ MY_NEWS_LIST = [
     },
     {
         "region": "충청남도",
-        "title": "천안시, 중소 제조기업 "AI 대전환" 본격 지원",
+        "title": '천안시, 중소 제조기업 "AI 대전환" 본격 지원',
         "link": "http://www.dailyculture.kr/2113331",
         "source": "문화매일"
     },
