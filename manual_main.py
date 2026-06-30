@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "삼성, 로봇 등 포트폴리오 투자… SK는 데이터센터 집중 전략",
+        "link": "https://v.daum.net/v/20260630021051806",
+        "source": "국민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "병원 간 ‘데이터 장벽’ 허문다···대구 ‘의료 인공지능 전환’ 추진",
+        "link": "https://www.khan.co.kr/article/202606301012011",
+        "source": "경향신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천항, 인공지능･신소재 등 신기술을 업고 스마트 X 세이프티 항만으로 도약",
+        "link": "https://www.incheonnews.com/news/articleView.html?idxno=437785",
+        "source": "인천뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "포천시, ㈜대도산업개발과 데이터센터 구축 사업 위한 업무협약 체결",
+        "link": "https://www.kmaeil.com/news/articleView.html?idxno=643741",
+        "source": "경인매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "시흥시, 생성형 AI 민원 비서 'Ai흥온' 7월 1일 정식 운영",
+        "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5035536",
+        "source": "신아일보"
     },
     {
         "region": "[지역]",
