@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "부산시, 미래먹거리 '양자 신소재 원천기술' 연구 거점 확보",
+        "link": "https://www.hkilbo.kr/news/articleView.html?idxno=127825",
+        "source": "한경일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "국립부경대, '산업 데이터 양자컴퓨팅 전환' 사업 참여기관 선정",
+        "link": "https://www.busan.com/view/busan/view.php?code=2026070110530431658",
+        "source": "부산일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "광주를 미래모빌리티 AI 혁신기지로…M.AX 클러스터 조성",
+        "link": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1375002",
+        "source": "연합뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경기도, 분당서울대병원 의료데이터 활용해 의료AI 개발기업 5개사 지원",
+        "link": "http://www.newsttaom.co.kr/news/articleView.html?idxno=228284",
+        "source": "뉴스따옴"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 클라우드컴퓨팅 전문인력 양성…3년 10억 투입",
+        "link": "https://www.newsis.com/view/NISX20260701_0003690590",
+        "source": "뉴시스"
     },
     {
         "region": "[지역]",
