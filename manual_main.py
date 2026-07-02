@@ -30,46 +30,46 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "SK AX-한국전력기술, 발전·에너지 산업 AX 혁신 MOU",
+        "link": "https://www.ajunews.com/view/20260702085151855",
+        "source": "아주경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "대구, 전국 첫 ‘스마트도시 특화단지’ 지정…수성알파시티 AI 혁신거점 도약",
+        "link": "https://www.kbmaeil.com/article/20260701500315",
+        "source": "경북매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대전",
+        "title": "대전시, 충남대, 국가연구소 선정...AI 기반 정밀의료 연구 본격화",
+        "link": "https://www.etnews.com/20260702000061",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "강원도, 민선 9기 1호 결재로 'AI데이터센터추진단' 출범",
+        "link": "https://www.etnews.com/20260701000186",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "증평군, AI 실증사업 선정...98억 스마트도시 시동",
+        "link": "https://www.cctoday.co.kr/news/articleView.html?idxno=2232539",
+        "source": "충청투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 대경권 전략산업 인재양성에 올해 114억원 투입",
+        "link": "https://www.etnews.com/20260702000030",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남도 ‘바이오메디컬 AI 상용화 기반 구축’ 산업부 공모 선정",
+        "link": "https://www.idomin.com/news/articleView.html?idxno=2009199",
+        "source": "경남도민일보"
     },
     {
         "region": "[지역]",
