@@ -30,46 +30,46 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "서울AI재단-서울과기대, 서울시 AI 혁신생태계 조성위해 맞손",
+        "link": "https://thesegye.com/news/view/1065562512277558",
+        "source": "세계타임즈"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천시, 로봇산업 혁신전략 협의체 출범…피지컬 AI 클러스터 본격화",
+        "link": "https://www.newsenc.com/news/articleView.html?idxno=4365",
+        "source": "쓰담미디어"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "강원도, ‘소형 데이터센터 기반 AI 산업 지원사업’ 공모 선정…국비 59억 확보",
+        "link": "https://m.kwnews.co.kr/article/20260705500607",
+        "source": "강원일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "진천군, 과기부 온디바이스 AI 서비스 실증·확산 사업 선정",
+        "link": "https://www.news1.kr/local/sejong-chungbuk/6218330",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "KIRO-전북TP, 지역 로봇산업 육성 및 새만금 지구 활성화 위한 업무협약",
+        "link": "https://www.etnews.com/20260706000019",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "해남군, 행안부 공공안전AI서비스 연계 지방정부 선정",
+        "link": "https://www.webeconomy.co.kr/news/articleView.html?idxno=2220600",
+        "source": "웹이코노미"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 삼성 구미 19조 투자 연계 휴머노이드 산업 육성",
+        "link": "https://www.metroseoul.co.kr/article/20260706500003",
+        "source": "메트로"
     },
     {
         "region": "[지역]",
