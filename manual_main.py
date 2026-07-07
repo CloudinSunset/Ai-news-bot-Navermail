@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "KAI, 네이버와 피지컬 AI 기반 미래 전투체계 플랫폼 공동 개발",
+        "link": "https://www.khan.co.kr/article/202607071012001",
+        "source": "경향신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "서울시교육청, 2026년 AI·디지털 미래형 과학교육 본격화…모든 학교 '지능형 과학실' 구축",
+        "link": "https://www.fn1966.com/news/articleView.html?idxno=41959",
+        "source": "스포츠저널"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "GIST 'AI대학' 출범…국가 AI·반도체 융합 인재 양성",
+        "link": "https://www.news1.kr/local/gwangju-jeonnam/6219806",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "동해시, AI 데이터센터 캠퍼스 추진 MOU",
+        "link": "https://www.newscj.com/news/articleView.html?idxno=3415020",
+        "source": "천지일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북대-SK AX, AI 거점대학 구현 맞손…실무형 AI 인재양성 본격화",
+        "link": "https://www.jbcj.kr/news/articleView.html?idxno=76195",
+        "source": "전북소비자저널"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "포항시, 푸드테크 로봇산업 육성 본격화…산업부 '2026 로봇 플래그쉽 지역거점 구축사업' 선정",
+        "link": "https://www.etnews.com/20260707000133",
+        "source": "전자신문"
     },
     {
         "region": "[지역]",
