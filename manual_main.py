@@ -30,46 +30,46 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산시-부경대-재료연, 해양AI소재연구센터 구축 맞손",
-        "link": "https://www.newsis.com/view/NISX20260708_0003699946",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "안산시, 행안부 추진 국가 AI 프로젝트에 선정… 스마트 도시 조성 박차",
-        "link": "https://www.dt.co.kr/article/12071721?ref=naver",
-        "source": "디지털타임즈"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "화성특례시, 2026년 온디바이스 AI 서비스 실증·확산 사업 선정",
-        "link": "https://www.gnjn.co.kr/news/articleView.html?idxno=119448",
-        "source": "경기남부저널"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "강원도",
-        "title": "강릉시, 과기부 '소형 AI데이터센터' 공모 선정…98억원 투입",
-        "link": "https://www.news1.kr/local/kangwon/6221280",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "영천시, 국토부 AI 인허가 사전진단 서비스 시범운영 지자체 선정",
-        "link": "https://www.gbprimenews.com/news/articleView.html?idxno=170884",
-        "source": "경북뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 온디바이스 AI 공모 선정…사업비 106억원 확보",
-        "link": "https://www.metroseoul.co.kr/article/20260707500499",
-        "source": "메트로"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "‘경남 스마트제조 AX 민·관 협의체’ 출범",
-        "link": "http://www.gndomin.com/news/articleView.html?idxno=481277",
-        "source": "경남도민신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
