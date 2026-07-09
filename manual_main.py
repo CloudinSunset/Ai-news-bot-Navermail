@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천 계양구, 수도권 유일 AI 기반 인허가 사전진단 시범 지자체 선정",
+        "link": "https://www.kgdm.co.kr/news/articleView.html?idxno=2008641",
+        "source": "경기도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "청주시, 전국 최초 AI 기반 스마트 휴양림 조성한다",
+        "link": "https://www.mobickeconomy.com/news/articleView.html?idxno=26930",
+        "source": "모빅경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "드림라인, 새만금국가산단에 AUG 해저케이블 육양국 구축 투자협약 체결",
+        "link": "https://www.etnews.com/20260709000109",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "전남광주, AI 영농형 태양광 스마트팜 실증 착수",
+        "link": "https://www.sedaily.com/article/20065604",
+        "source": "서울경제"
     },
     {
         "region": "[지역]",
