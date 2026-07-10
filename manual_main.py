@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "전기안전공사·한수원, 발전설비 안전성 강화 '맞손'…AI 기술협력",
-        "link": "https://www.newsis.com/view/NISX20260709_0003702764",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "부산",
-        "title": "부산 명지녹산산단서 140억원 규모 ‘엣지AIDC 실증 시범사업’",
-        "link": "https://www.busan.com/view/busan/view.php?code=2026071007192334424",
-        "source": "부산일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북, 대한민국 대도약 메가프로젝트 '피지컬AI SW플랫폼' 정조준",
-        "link": "https://www.gkg.co.kr/187555",
-        "source": "전북금강일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "포항산단, 정부 AX 실증산단 선정… 904억 지원사업 핵심축 부상",
-        "link": "https://www.kbmaeil.com/article/20260710500003",
-        "source": "경북매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "제조 특화 '경남 피지컬 AI 연구개발사업' 본격 추진",
-        "link": "https://www.etnews.com/20260709000063",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
