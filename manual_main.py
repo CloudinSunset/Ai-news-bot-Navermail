@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "한국섬유개발연구원, 지역 패션기업 AX(인공지능 전환) 지원 착수",
+        "link": "https://www.ktnews.com/news/articleView.html?idxno=147110",
+        "source": "한국섬유신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천대, 한국 피지컬AI협회와 산학협력 강화 업무협약 체결",
+        "link": "https://www.ngonews.kr/news/articleView.html?idxno=232590",
+        "source": "한국NGO신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "원주시, 산업혁신기반 구축사업 선정… AI 기반 제조혁신 거점 구축",
+        "link": "https://www.etnews.com/20260713000006",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "청주시, ‘AX 실증산단’ 구축 공모 선정⋯국비 140억 확보",
+        "link": "https://www.cctimes.kr/news/articleView.html?idxno=915967",
+        "source": "충청타임즈"
     },
     {
         "region": "[지역]",
