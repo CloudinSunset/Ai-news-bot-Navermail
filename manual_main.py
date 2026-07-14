@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "대구",
-        "title": "한국섬유개발연구원, 지역 패션기업 AX(인공지능 전환) 지원 착수",
-        "link": "https://www.ktnews.com/news/articleView.html?idxno=147110",
-        "source": "한국섬유신문"
+        "region": "서울",
+        "title": "메가존클라우드, 서울 AI 허브와 AI 기업 성장 지원 ‘맞손’",
+        "link": "https://www.epnc.co.kr/news/articleView.html?idxno=404221",
+        "source": "테크월드"
     },
     {
-        "region": "인천",
-        "title": "인천대, 한국 피지컬AI협회와 산학협력 강화 업무협약 체결",
-        "link": "https://www.ngonews.kr/news/articleView.html?idxno=232590",
-        "source": "한국NGO신문"
+        "region": "서울",
+        "title": "KT, '국가정보자원관리원 혁신 ISP' 우선협상대상자 선정",
+        "link": "https://biz.heraldcorp.com/article/10807730",
+        "source": "헤럴드경제"
     },
     {
-        "region": "강원도",
-        "title": "원주시, 산업혁신기반 구축사업 선정… AI 기반 제조혁신 거점 구축",
-        "link": "https://www.etnews.com/20260713000006",
+        "region": "대전",
+        "title": "대전시교육청, AI 신산업·신기술 분야 직업계고 학과 재구조화 최종 선정",
+        "link": "https://www.newsband.kr/news/articleView.html?idxno=564459",
+        "source": "뉴스밴드"
+    },
+    {
+        "region": "충청남도",
+        "title": "충남도, 방사청·논산시와 AI 국방로봇 산업 육성 '시동'",
+        "link": "https://www.etnews.com/20260714000081",
         "source": "전자신문"
     },
     {
-        "region": "충청북도",
-        "title": "청주시, ‘AX 실증산단’ 구축 공모 선정⋯국비 140억 확보",
-        "link": "https://www.cctimes.kr/news/articleView.html?idxno=915967",
-        "source": "충청타임즈"
-    },
-    {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 19억 투입…식품로봇 실증 거점 구축",
+        "link": "http://www.newgbnews.com/news/view.php?idx=403748",
+        "source": "일간경북신문"
     },
     {
         "region": "[지역]",
