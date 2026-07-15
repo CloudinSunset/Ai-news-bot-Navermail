@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경기도교육청·서울대 사범대, AI 시대 교육혁신 협약 체결",
+        "link": "http://www.hanaronews.kr/news/articleView.html?idxno=108158",
+        "source": "팔당유역신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "음성군, 충북도 유일 AI기반 인·허가 시범사업 선정",
+        "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2428232",
+        "source": "충청일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "전남·광주 직업계고, AI·반도체 인재양성 체계 구축 속도전",
+        "link": "https://www.ihopenews.com/news/articleView.html?idxno=255321",
+        "source": "호남교육신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북대, 대구시·경북도와 손잡고 대경권 미래 인재 양성 초광역 협력체계 구축",
+        "link": "https://www.etnews.com/20260715000020",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "구미, 삼성 19조 투자 발맞춰 AI 인재 키운다…제조 AX 혁신거점 지정",
+        "link": "https://www.kbsm.net/news/view.php?idx=526917",
+        "source": "경북신문"
     },
     {
         "region": "[지역]",
