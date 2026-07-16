@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "GIST, AI 연구 기반 구축 국책사업 선정…2034년까지 750억원 투입",
+        "link": "https://www.namdonews.com/news/articleView.html?idxno=917167",
+        "source": "남도일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "시흥시, 서울대 시흥캠퍼스 인공지능(AI) 실무인재 양성 본격화…지역 기업 혁신까지 지원",
+        "link": "https://www.kgmail.kr/news/articleView.html?idxno=632677",
+        "source": "경기매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "전남대-씨엔플러스, AI 데이터센터 기반 산학협력 맞손",
+        "link": "https://www.hankookilbo.com/news/article/A2026071610440005876",
+        "source": "한국일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 북극항로 시대 대비 AI 기반 해양산업 구축 속도",
+        "link": "https://www.munhwa.com/article/11603016?ref=naver",
+        "source": "문화일보"
     },
     {
         "region": "[지역]",
