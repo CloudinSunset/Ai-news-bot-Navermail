@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "SK인텔릭스-KAIST, 로보틱스 기반 AI 정신건강 연구개발 협약",
-        "link": "https://www.etnews.com/20260721000071",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "반월·시화국가산단, AI 제조혁신으로 첨단 산업단지 도약",
-        "link": "https://www.newsis.com/view/NISX20260721_0003716052",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북도·전북대·현대차, 성장엔진 인재 양성·연구 협력",
-        "link": "https://www.newscj.com/news/articleView.html?idxno=3418471",
-        "source": "천지일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라남도",
-        "title": "농어촌공사 전남지역본부, AI대전환 이끌 ‘대규모 융합 로봇 실증사업’ 최종 선정",
-        "link": "https://www.aflnews.co.kr/news/articleView.html?idxno=324885",
-        "source": "농수축산신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "고령군, 경북 디지털전환(DX) 지원모델 확산사업 참여기업 최종 선정",
-        "link": "https://www.dailydgnews.com/news/article.html?no=257900",
-        "source": "데일리경북뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
