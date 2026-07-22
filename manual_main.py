@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "제조 AI로 미래 모빌리티 전환 앞당긴다…대구시, 제조혁신 생태계 조성 본격화",
+        "link": "https://www.munhwa.com/article/11604123?ref=naver",
+        "source": "문화일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경기도, 피지컬 AI 협력체계 구축 첫걸음…협의체 구성 논의",
+        "link": "http://www.newsttaom.co.kr/news/articleView.html?idxno=230278",
+        "source": "따옴뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "고양시, 'UN 글로벌 AI허브' 유치 총력전…TF까지 만든다",
+        "link": "https://www.newsis.com/view/NISX20260721_0003717301",
+        "source": "뉴시스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "충주시, 스마트그린산단 '피지컬 AI 생태계 조성' 착수",
+        "link": "https://www.news1.kr/local/sejong-chungbuk/6235180",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "광양시, 스마트제조 스케일업 컨퍼런스 개최 및 AX 실증 생태계 구축",
+        "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5043107",
+        "source": "신아일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경상북도, 주민케어 AI 서비스 구축에 12억 원 확보",
+        "link": "https://www.ktnnews.co.kr/122303",
+        "source": "코리아투데이뉴스"
     },
     {
         "region": "[지역]",
