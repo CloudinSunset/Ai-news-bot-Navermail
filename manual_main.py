@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "공공기관 감사에 AI 기술 고도화, 기보·HUG·캠코 협력체계 구축",
+        "link": "https://www.news1.kr/industry/sb-founded/6236137",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "대구시, 중기부 'AI응용제품 신속 상용화 지원사업' 선정",
+        "link": "https://www.etnews.com/20260723000039",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "광양시, 산·학·관 ‘AX 실증 생태계’ 구축 총력",
+        "link": "https://v.daum.net/v/1moAzp3GAw",
+        "source": "광주매일신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경산시, AI·AX·미래모빌리티 중심 미래산업도시 도약… 경북과 경제 원팀 구축",
+        "link": "https://www.hidomin.com/news/articleView.html?idxno=714246",
+        "source": "경북도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "해수부, 'K-피지컬 AI'로 항만 패러다임 바꾼다…진해신항에 '선도모델' 구축",
+        "link": "https://www.news1.kr/economy/idustry-trade/6234289",
+        "source": "뉴스1"
     },
     {
         "region": "[지역]",
