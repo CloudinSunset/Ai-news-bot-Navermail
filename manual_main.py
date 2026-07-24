@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "강원도",
-        "title": "춘천 산업단지 AI 전환 본격화...'강원후평 MINI 얼라이언스' 출범",
-        "link": "https://www.etnews.com/20260724000026",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청남도",
-        "title": "충남도, AI·디지털 전문인재 양성 속도 낸다",
-        "link": "https://v.daum.net/v/20260723174551048",
-        "source": "대전일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북대, AWS코리아·업스테이지 등 10개사와 'AI 교육·연구·취업' 산학 업무협약",
-        "link": "https://www.etnews.com/20260724000119",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 영일만항 '북극항로 거점항만' 육성 속도",
-        "link": "https://imaeil.com/page/view/2026072409063726859",
-        "source": "매일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
