@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산대-삼성중공업, 조선산업 AX 혁신 산학연 협력 본격화",
-        "link": "https://www.busan.com/view/busan/view.php?code=2026072810232717813",
-        "source": "부산일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "충북대 퀀텀-AI컴퓨팅센터 개소…AI 거점대학 도약",
-        "link": "https://v.daum.net/v/p8GffhIkCk",
-        "source": "아이뉴스24"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": '전북교육청·전북대, AI교육 활성화 맞손…"지역 인재 양성"',
-        "link": "https://www.newsis.com/view/NISX20260728_0003726162",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남대 등 7개 대학 '제조 AX·AI 로봇 인재육성' 초광역 협의체 출범",
-        "link": "https://www.etnews.com/20260728000086",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "창원특례시, 국내 최초 ‘100MW급 방산 전용 AI 데이터센터’ 유치",
-        "link": "https://www.kns.tv/news/articleView.html?idxno=1011068",
-        "source": "KNS뉴스통신"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
