@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서울AI재단, MIT와 협력 ‘AI인재’ 키운다",
-        "link": "https://www.donga.com/news/article/all/20260726/134367786/2",
-        "source": "동아일보"
-    },
-    {
-        "region": "서울",
-        "title": "서초구, ‘인공지능위원회’ 출범…공공·민간 AI 정책 안전성 강화",
-        "link": "https://www.munhwa.com/article/11605102?ref=naver",
-        "source": "문화일보"
-    },
-    {
-        "region": "인천",
-        "title": "인천경제청, AI로 대규모 행사장 군중위험 실시간 관리",
-        "link": "https://www.newsis.com/view/NISX20260727_0003723985",
-        "source": "뉴시스"
+        "region": "부산",
+        "title": "부산대-삼성중공업, 조선산업 AX 혁신 산학연 협력 본격화",
+        "link": "https://www.busan.com/view/busan/view.php?code=2026072810232717813",
+        "source": "부산일보"
     },
     {
         "region": "충청북도",
-        "title": "충북도, ‘스마트 인턴‘ 도입으로 도시계획 행정 혁신 본격화",
-        "link": "https://www.ynamnews.co.kr/news/articleView.html?idxno=138068",
-        "source": "영남신문"
+        "title": "충북대 퀀텀-AI컴퓨팅센터 개소…AI 거점대학 도약",
+        "link": "https://v.daum.net/v/p8GffhIkCk",
+        "source": "아이뉴스24"
     },
     {
-        "region": "전라남도",
-        "title": "해남, 스마트 재활 거점 공모 선정…30억 확보",
-        "link": "https://www.seoulilbo.com/news/articleView.html?idxno=841722",
-        "source": "서울일보"
+        "region": "전라북도",
+        "title": '전북교육청·전북대, AI교육 활성화 맞손…"지역 인재 양성"',
+        "link": "https://www.newsis.com/view/NISX20260728_0003726162",
+        "source": "뉴시스"
+    },
+    {
+        "region": "경상남도",
+        "title": "경남대 등 7개 대학 '제조 AX·AI 로봇 인재육성' 초광역 협의체 출범",
+        "link": "https://www.etnews.com/20260728000086",
+        "source": "전자신문"
+    },
+    {
+        "region": "경상남도",
+        "title": "창원특례시, 국내 최초 ‘100MW급 방산 전용 AI 데이터센터’ 유치",
+        "link": "https://www.kns.tv/news/articleView.html?idxno=1011068",
+        "source": "KNS뉴스통신"
     },
     {
         "region": "[지역]",
