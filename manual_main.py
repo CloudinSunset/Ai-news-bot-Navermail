@@ -30,46 +30,46 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "전남광주, 국가 농업AX플랫폼 본격 구축...AI·데이터 기반 첨단농업 생태계 조성",
+        "link": "https://www.etnews.com/20260729000067",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경기도, 복지행정 AI 실증사업 공모 선정. 수원 등 5곳에서 8월부터 현장 적용",
+        "link": "http://www.newsttaom.co.kr/news/articleView.html?idxno=231191",
+        "source": "따옴뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "양주시-㈜디펠릭스홀딩스, ‘첨단 데이터센터 구축’업무협약 체결",
+        "link": "https://www.munhwa.com/article/11605643?ref=naver",
+        "source": "문화일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북대-모레, 전역 위치결정 등 피지컬AI 3건 기술이전 계약 체결",
+        "link": "https://www.etnews.com/20260729000178",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "광양항, 피지컬 AI항만으로 발돋움…2029년까지 7724억 투입",
+        "link": "https://www.ajunews.com/view/20260729101333491",
+        "source": "아주경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, '2026년 소형데이터센터 기반 AI 산업성장지원사업' 공모 선정",
+        "link": "https://www.etnews.com/20260729000013",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "제주",
+        "title": "제주도, AI·재생에너지 융합 거점 도약…'소형 데이터센터 기반 AI 성장지원사업' 최종 선정",
+        "link": "https://www.daehanilbo.co.kr/news/articleView.html?idxno=66436",
+        "source": "대한일보"
     },
     {
         "region": "[지역]",
