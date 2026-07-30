@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "대구",
-        "title": "대구·경북 중소기업 AI 전환 맞손…5개 기관 업무협약",
-        "link": "https://www.kbmaeil.com/article/20260729500517",
-        "source": "경북매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라남도",
-        "title": "광주은행-전남대 맞손…AI 거점 국립대 육성한다",
-        "link": "https://www.newsis.com/view/NISX20260730_0003729484",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "포항에 동북권 ICT 콤플렉스 개소…AI·SW 맞춤형 실무인재 양성",
-        "link": "https://www.munhwa.com/article/11606029",
-        "source": "문화일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 북부권 중심 ‘AI 역노화 산업 거점' 조성 한다",
-        "link": "https://www.dailydgnews.com/news/article.html?no=258794",
-        "source": "데일리대구경북뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
