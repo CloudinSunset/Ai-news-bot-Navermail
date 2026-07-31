@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "부산항만공사-HD현대삼호, '피지컬 AI' 기반 스마트항만 기술개발 맞손",
+        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607302309295220278",
+        "source": "대한경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "전남광주 서구, 유휴 국유재산 활용 'AI 주민대학' 조성",
+        "link": "https://www.asiae.co.kr/news/view.htm?idxno=2026073020372736607",
+        "source": "아시아경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "시흥시, '복지행정 인공지능(AI) 정책실험실' 공모 선정...인공지능 기반 스마트 복지행정 추진",
+        "link": "https://www.dhtoday.com/news/articleView.html?idxno=236675",
+        "source": "대한투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남도, 중국과 AI·교육·문화 협력 확대…광둥·구이저우성과 교류 강화",
+        "link": "https://www.newskorea.ne.kr/news/articleView.html?idxno=21102",
+        "source": "뉴스코리아"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "순천시, 인공지능 선도도시 도약…3개년 로드맵 마련",
+        "link": "https://v.daum.net/v/20260731091841584",
+        "source": "아시아경제"
     },
     {
         "region": "[지역]",
