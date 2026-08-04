@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "광주",
-        "title": "‘모두의 AI 성장사다리 프로젝트’ 출범식 국립광주과학관에서 열려…AI 문화 확산 기대",
-        "link": "https://www.aipostkorea.com/news/articleView.html?idxno=12258",
-        "source": "AI포스트"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "증평군, 생애주기별 AI 교육으로 '스마트 교육도시' 속도",
-        "link": "https://www.news1.kr/local/sejong-chungbuk/6248068",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라남도",
-        "title": "전남광주특별시, 장성에 AI 데이터센터 구축 본격…20MW 규모 추진",
-        "link": "https://www.aipostkorea.com/news/articleView.html?idxno=12266",
-        "source": "AI포스트"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라남도",
-        "title": "'국가 AI 컴퓨팅센터' 해남 솔라시도서 첫 삽… 2028년 완공",
-        "link": "https://www.chosun.com/economy/tech_it/2026/08/03/JYN26P3YSRCWJECL3SVFAZRJHQ/",
-        "source": "조선일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
