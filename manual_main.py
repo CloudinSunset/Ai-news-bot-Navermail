@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산대, 스탠포드대 등과 손잡고 정밀의료 AI허브 설립",
-        "link": "https://www.newsis.com/view/NISX20260803_0003733586",
-        "source": "뉴시스"
+        "region": "광주",
+        "title": "‘모두의 AI 성장사다리 프로젝트’ 출범식 국립광주과학관에서 열려…AI 문화 확산 기대",
+        "link": "https://www.aipostkorea.com/news/articleView.html?idxno=12258",
+        "source": "AI포스트"
+    },
+    {
+        "region": "충청북도",
+        "title": "증평군, 생애주기별 AI 교육으로 '스마트 교육도시' 속도",
+        "link": "https://www.news1.kr/local/sejong-chungbuk/6248068",
+        "source": "뉴스1"
     },
     {
         "region": "전라남도",
-        "title": "전남광주통합교육청-전남대, 미래 첨단산업 인재 양성 맞손",
-        "link": "http://www.homae.co.kr/article.php?aid=1785682800885507014",
-        "source": "호남매일"
+        "title": "전남광주특별시, 장성에 AI 데이터센터 구축 본격…20MW 규모 추진",
+        "link": "https://www.aipostkorea.com/news/articleView.html?idxno=12266",
+        "source": "AI포스트"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 첨단인재 육성 국비 90억 확보…경북대 등 9개 대학 참여",
-        "link": "https://www.news1.kr/local/daegu-gyeongbuk/6246992",
-        "source": "뉴스1"
+        "region": "전라남도",
+        "title": "'국가 AI 컴퓨팅센터' 해남 솔라시도서 첫 삽… 2028년 완공",
+        "link": "https://www.chosun.com/economy/tech_it/2026/08/03/JYN26P3YSRCWJECL3SVFAZRJHQ/",
+        "source": "조선일보"
     },
     {
-        "region": "경상북도",
-        "title": "경산시, 19억 들여 'AI 팩토리 로봇 자율제조 실증거점' 구축",
-        "link": "https://www.news1.kr/local/daegu-gyeongbuk/6246928",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, AI기반 스마트 APC 확산...농산물 유통 혁신 본격화",
-        "link": "https://www.etnews.com/20260803000015",
-        "source": "전자신문"
-    },
-    {
-        "region": "경상남도",
-        "title": "경남도 첨단제조로봇 실증 16건 확보…전국 최대 규모",
-        "link": "https://www.sedaily.com/article/20074928",
-        "source": "서울경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
