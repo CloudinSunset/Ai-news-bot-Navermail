@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "중기중앙회·AI혁신추진단, 제조 중소기업 AI 전환 본격화",
-        "link": "http://www.amenews.kr/news/view.php?idx=67614&mcode=m75fvap",
-        "source": "신소재경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "대구에 국내 첫 '휴머노이드 로봇 안전인증센터' 들어선다",
-        "link": "http://imaeil.com/page/view/2026080509370616961",
-        "source": "매일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "충북TP, AI 기반 제조혁신 가속…AX 혁신기업 13개사 선정",
-        "link": "https://www.etnews.com/20260805000059",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 인공지능 기반 맞춤형 스마트 건강관리 실증 서비스 첫발!",
-        "link": "http://www.dailyculture.kr/2149200",
-        "source": "문화매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "한국원자력환경공단, 방폐물 관리에 로봇·AI 도입…무인화·안전성 강화",
-        "link": "https://www.ajunews.com/view/20260805040752458",
-        "source": "아주경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
