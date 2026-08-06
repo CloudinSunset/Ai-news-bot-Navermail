@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서울시, 200억 투입해 데이터센터 인프라 고도화...AI 행정 지원",
-        "link": "https://www.newspim.com/news/view/20260805000338",
-        "source": "뉴스핌"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대전",
-        "title": "대전교육정보원, ‘AI교육지원센터’ 구축 착수…24.7억 투입, 내년 7월 개소",
-        "link": "https://www.edpl.co.kr/news/articleView.html?idxno=21224",
-        "source": "교육플러스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북대 AI대학-NH농협은행 전북본부, AI 인재양성 ‘맞손’",
-        "link": "https://www.honamjeil.com/news/articleView.html?idxno=25584",
-        "source": "호남제일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "지역활성화펀드 9·10호 선정…포항 AI데이터센터·영광 배터리저장장치",
-        "link": "https://www.news1.kr/economy/trend/6250940",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
