@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "포항을 '제조 AX' 글로벌 거점으로…포항TP, 한·중 '피지컬 AI' 글로벌 협력 속도",
+        "link": "https://www.etnews.com/20260806000394",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "AI로 공장 미리 짓는다… 경북도, 포항 이차전지 현장서 '가상공장' 실증",
+        "link": "https://www.hankookilbo.com/news/article/A2026080710210001136",
+        "source": "한국일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "국립창원대, 하동캠퍼스 설립 추진 가시화…하동군과 ‘Human Physical AI’ 협력 맞손",
+        "link": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0300&key=20260807.99099001815",
+        "source": "국제신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "제주",
+        "title": "'제주권 AX 대전환' 용역 착수…'그린AI 데이터센터' 구축",
+        "link": "https://www.newsis.com/view/NISX20260807_0003740199",
+        "source": "뉴시스"
     },
     {
         "region": "[지역]",
