@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "대구 전통 제조업에 AI 입힌다…225억 들여 ‘제조데이터 밸류체인’ 구축",
+        "link": "https://v.daum.net/v/tGl4bogRro",
+        "source": "경북매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남서 반도체·AI·전력 인재 키운다...한기대, 6개 기관과 업무협약",
+        "link": "https://www.mt.co.kr/policy/2026/08/10/2026081008573678004",
+        "source": "머니투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북도, 피지컬AI 재난로봇 거점 구축 박차",
+        "link": "https://www.jeonbuktimes.co.kr/news_view.jsp?ncd=228806",
+        "source": "전북타임스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "포항 철강산업에 240억원 투입…'철강 전용 AI 데이터센터' 구축",
+        "link": "https://www.ajunews.com/view/20260810001228173",
+        "source": "아주경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북대·전남대, '달빛동맹 연합캠퍼스' 구축…AI 인재 양성 맞손",
+        "link": "https://www.hankookilbo.com/news/article/A2026081010390005047",
+        "source": "한국일보"
     },
     {
         "region": "[지역]",
