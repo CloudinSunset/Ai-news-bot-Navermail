@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대구",
+        "title": "대구시, 행정 전반에도 인공지능 대전환 본격화",
+        "link": "https://www.kbsm.net/news/view.php?idx=529881",
+        "source": "경북신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "1조원 규모 강원형 ‘의료·웰니스 AX 허브’ 속도전",
+        "link": "https://www.kado.net/news/articleView.html?idxno=2065935",
+        "source": "강원도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남도, 방산혁신클러스터 본격 시동…논산 'AI 국방로봇' 전진기지로 뜬다",
+        "link": "https://www.etnews.com/20260811000006",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "부산대 양산캠퍼스, 동남권 AI 허브 도약 기대",
+        "link": "https://www.idomin.com/news/articleView.html?idxno=2011947",
+        "source": "경남도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "제주도",
+        "title": "제주도, 기후·해양 재난 AI로 예측·대비한다…200억 투자",
+        "link": "https://www.newsis.com/view/NISX20260811_0003744148",
+        "source": "뉴시스"
     },
     {
         "region": "[지역]",
