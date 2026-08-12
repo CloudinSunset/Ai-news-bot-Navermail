@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산시, 미래 AI·SW 혁신 인재의 요람 'AI·SW 마에스트로 부산센터' 개소",
-        "link": "http://www.dailyculture.kr/2155362",
-        "source": "문화매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "대구, AI 신약개발 첫 시범거점 됐다…경북대 중심 생태계 구축",
-        "link": "http://imaeil.com/page/view/2026081214431969883",
-        "source": "매일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "인천",
-        "title": "인천 미추홀구, 인하대 데이터사이언스학과와 협약...공공데이터 분석과제 추진",
-        "link": "https://www.kmaeil.com/news/articleView.html?idxno=648273",
-        "source": "경인매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "성남시, AI·드론 도로관리 플랫폼 구축…8억9800만원 투입",
-        "link": "https://www.etnews.com/20260812000157",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북대, 대구·경북지역 제조산업 AI 전환 나서",
-        "link": "https://www.newsis.com/view/NISX20260812_0003745884",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
