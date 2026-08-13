@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "의정부 첨단기업에 최소 30억 투자…150억 펀드 본격 가동",
+        "link": "https://www.news1.kr/local/gyeonggi/6257846",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "AI 인재 키우는 대학 교육… 기업이 함께 만든다",
+        "link": "http://www.fnnews.com/news/202608131011018365",
+        "source": "파이낸셜뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전주시, AI 신뢰성 기반 '피지컬AI 선도도시' 도약 본격화",
+        "link": "https://www.etnews.com/20260813000146",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "전남광주시, 자동차산업 'AI 대전환' 이끈다...'서남권 모빌리티 M.AX 포럼'서 개최",
+        "link": "https://www.etnews.com/20260813000171",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "한화, 지역 AI·우주항공 인재 양성... 국립대 3곳과 맞손",
+        "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000002680",
+        "source": "국민일보"
     },
     {
         "region": "[지역]",
