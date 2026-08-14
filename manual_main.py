@@ -30,22 +30,22 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "소진공, AI로 일하는 방식 바꾼다…소상공인 지원서비스도 고도화",
-        "link": "https://www.news1.kr/industry/sb-founded/6258785",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청남도",
-        "title": "서산시, ‘지능형 스마트도시’ 대도약 다짐",
-        "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=904098",
-        "source": "충남일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북대병원, 의료 AI 대비 데이터 표준화 본격 착수",
-        "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3010218",
-        "source": "의학신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
