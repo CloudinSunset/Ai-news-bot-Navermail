@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "KT-서울대병원, 의료 AX 플랫폼 구축 협력",
+        "link": "https://www.epnc.co.kr/news/articleView.html?idxno=405644",
+        "source": "테크월드"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": '“피지컬 AI로 육군 지원”…현대차그룹, 육군·산업부와 MOU',
+        "link": "https://www.mk.co.kr/news/business/12129792",
+        "source": "매일경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "용산구, 서울신용보증재단과 손잡고 빅데이터 기반 소상공인 지원",
+        "link": "https://thesegye.com/news/view/1065567734654663",
+        "source": "세계타임즈"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남대·네이버클라우드, 중부권 AI거점센터 조성…2030년까지 단계적 확대",
+        "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1094087",
+        "source": "충청매일"
     },
     {
         "region": "[지역]",
