@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서울시·英 임페리얼 칼리지, AI 기술 난제 공동연구 맞손",
-        "link": "https://biz.chosun.com/topics/topics_social/2026/08/18/MRBE2J6DNRHYNPWIXTPMS2MQHA/",
-        "source": "조선비즈"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "부산",
-        "title": "부산항, 자율주행·무인화로 스마트항만 전환…454억 투입",
-        "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202608131146074050916",
-        "source": "대한경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "DGIST, 자체 기술로 인공지능 전환 나섰다",
-        "link": "https://www.newsis.com/view/NISX20260819_0003753508",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "진천군, K-스마트 특화교육으로 AI·디지털 미래인재 키운다",
-        "link": "https://www.news1.kr/local/sejong-chungbuk/6262502",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "기보·경남은행, 미래전략산업 육성 ‘맞손’…500억원 금융지원",
-        "link": "https://biz.heraldcorp.com/article/10844722",
-        "source": "헤럴드경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
