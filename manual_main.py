@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "국립한국해양대-한국조선해양기자재연구원, ‘해양 AX 혁신허브’ 구축 협력",
-        "link": "https://www.busan.com/view/busan/view.php?code=2026082010534496833",
-        "source": "부산일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "월덱스, DGIST와 'AI·반도체 동맹'…상반기 영업익 308억에 기술 고도화까지",
-        "link": "http://www.asiae.co.kr/news/view.htm?idxno=2026082008441431367",
-        "source": "아시아경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "삼성, 광주에 2400억 투자…AI 데이터센터 냉각·공조 생산기지 구축",
-        "link": "http://www.nbn-news.co.kr/news/articleView.html?idxno=87251",
-        "source": "남도방송"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남테크노파크, 4개 기관과 AI·SW 교육 활성화 협약 체결",
-        "link": "https://www.metroseoul.co.kr/article/20260819500551",
-        "source": "메트로"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
