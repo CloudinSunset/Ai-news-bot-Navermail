@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "조달청 '인공지능조달혁신과' 출범...공공조달 AI 대전환 속도",
-        "link": "https://www.news1.kr/local/daejeon-chungnam/6265179",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "서울",
-        "title": "서울시의회 '디지털 의정위원회' 출범…AI 활용 의정모델 만든다",
-        "link": "https://www.news1.kr/local/seoul/6265301",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "국내 1위 농기계 기업 ‘대동’, 대구로 복귀…AI·로봇 기반 생산시설 고도화",
-        "link": "https://www.munhwa.com/article/11610867?ref=naver",
-        "source": "문화일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "전남광주특별시-중 광저우시, 인공지능(AI) 주제 ‘한중 학술포럼’",
-        "link": "https://www.aipostkorea.com/news/articleView.html?idxno=12429",
-        "source": "AI포스트"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "창원시, 1조894억원 규모 AI 데이터센터 투자 유치",
-        "link": "https://www.newsis.com/view/NISX20260820_0003756151",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
