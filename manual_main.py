@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "부산 제조업 이끌 ‘앵커기업’ 13곳으로 확대…AI·AX 전환도 지원",
+        "link": "https://www.sedaily.com/article/20082393",
+        "source": "서울경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "광주시체육회 스포츠과학연구원 ‘전국 최초’, 문체부 AI R&D 실증사업 참여",
+        "link": "https://www.ggoverallnews.co.kr/news/articleView.html?idxno=113409",
+        "source": "경기종합뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북도 '지역특화 농업구조 전환 TF' 가동…소득 높인다",
+        "link": "https://www.newsis.com/view/NISX20260824_0003759582",
+        "source": "뉴시스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북, ‘전북 홀대론’ 딛고 ‘피지컬AI·로봇’ 독자 거점화 시도",
+        "link": "https://sudocbiz.com/View.aspx?No=4194554",
+        "source": "수도시민경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도, 로봇산업 공급망 대응 TF 본격 가동",
+        "link": "http://www.jeonmae.co.kr/news/articleView.html?idxno=1286484",
+        "source": "전국매일신문"
     },
     {
         "region": "[지역]",
