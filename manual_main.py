@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "부산시, 국토교통부 주관 '한-스페인 양자협력형 국제공동연구' 사업 최종 선정",
+        "link": "http://www.dailyculture.kr/2166080",
+        "source": "문화매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "광주",
+        "title": "스마트인재개발원, K-하이테크 플랫폼 운영…지역 산업 AX 전환 지원",
+        "link": "https://www.etnews.com/20260823000018",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "융기원, 경기 AI기업 12곳 해외 공동연구 지원",
+        "link": "https://www.etnews.com/20260825000003",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북대, '피지컬AI 대도약 결의대회'… 미래산업 육성 결집",
+        "link": "https://www.jeonbuktimes.co.kr/news_view.jsp?ncd=229194",
+        "source": "전북타임즈"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": '구미시 '피지컬 AI'로 제조 강점 잇는다…"로봇산업 중심 도약"',
+        "link": "https://www.news1.kr/local/daegu-gyeongbuk/6268446",
+        "source": "뉴스1"
     },
     {
         "region": "[지역]",
