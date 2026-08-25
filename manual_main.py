@@ -55,7 +55,7 @@ MY_NEWS_LIST = [
     },
     {
         "region": "경상북도",
-        "title": '구미시 '피지컬 AI'로 제조 강점 잇는다…"로봇산업 중심 도약"',
+        "title": "구미시 '피지컬 AI'로 제조 강점 잇는다…로봇산업 중심 도약",
         "link": "https://www.news1.kr/local/daegu-gyeongbuk/6268446",
         "source": "뉴스1"
     },
