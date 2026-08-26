@@ -57,7 +57,7 @@ MY_NEWS_LIST = [
         "region": "전라북도",
         "title": "군산 AI 데이터센터 개발 시동… 한국투자증권, 금융주관 맡아 사업 본격화",
         "link": "http://www.ilyoseoul.co.kr/news/articleView.html?idxno=521653",
-        "source": "일요서울
+        "source": "일요서울"
     },
     {
         "region": "경상북도",
