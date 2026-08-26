@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "기보, 우리銀과 미래 전략산업 육성…9750억 협약보증 공급",
-        "link": "https://www.metroseoul.co.kr/article/20260826500015",
-        "source": "메트로"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "부산",
-        "title": "국립부경대, SK AX와 산학협력…AI 실무인재 키워 채용 연계한다",
-        "link": "https://www.joongang.co.kr/article/25456013",
-        "source": "중앙일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "인천",
-        "title": "인천시-TP, ‘ICT콤플렉스’ 개소…제조업 AI 전환 속도",
-        "link": "https://www.sedaily.com/article/20083293",
-        "source": "서울경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "전남광주특별시 동구-조선대학교, 상생발전 협약 체결",
-        "link": "http://www.hninnews.com/14444685268",
-        "source": "호남인뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "군산 AI 데이터센터 개발 시동… 한국투자증권, 금융주관 맡아 사업 본격화",
-        "link": "http://www.ilyoseoul.co.kr/news/articleView.html?idxno=521653",
-        "source": "일요서울"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "안동시, 투자유치자문단 출범…바이오·관광·AI로 투자 외연 확대",
-        "link": "https://www.dkilbo.com/news/articleView.html?idxno=552251",
-        "source": "대경일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
