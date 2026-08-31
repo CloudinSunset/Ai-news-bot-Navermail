@@ -31,39 +31,39 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 MY_NEWS_LIST = [
     {
         "region": "서울",
-        "title": "창진원, 'AX 정책자문단' 출범…창업지원 전반에 AI 입힌다",
-        "link": "https://www.etnews.com/20260826000252",
-        "source": "전자신문"
+        "title": "서울·도쿄, AI 행정 경험 공유…공동연구·실증 추진",
+        "link": "https://www.newsis.com/view/NISX20260829_0003768034",
+        "source": "뉴시스"
     },
     {
-        "region": "서울",
-        "title": "한화 건설부문, AI로 건물 에너지 효율 높인다…기후부 국책연구과제 참여",
-        "link": "https://www.newsis.com/view/NISX20260826_0003762831",
-        "source": "뉴시스"
+        "region": "대구",
+        "title": "DGIST·유한양행·제이인츠바이오·연세-유일한 폐암 연구소,바이오산업 AX 공동연구 업무협약",
+        "link": "https://www.munhwa.com/article/11613177?ref=naver",
+        "source": "문화일보"
     },
     {
         "region": "광주",
-        "title": "전남광주 서구, 호남 최초 '신중년 AI 디지털 일자리센터' 운영",
-        "link": "https://www.newsis.com/view/NISX20260826_0003763453",
-        "source": "뉴시스"
+        "title": "전남광주특별시, 164억 투입 '피지컬AI 휴머노이드' 혁신센터 구축",
+        "link": "https://www.greened.kr/news/articleView.html?idxno=348618",
+        "source": "녹색경제신문"
     },
     {
         "region": "강원도",
-        "title": "춘천시, 의료 AX 전문가 협력체계 강화…강원 의료·웰니스 AX 사업 발굴",
-        "link": "https://www.etnews.com/20260826000004",
-        "source": "전자신문"
+        "title": "‘지역 제조산업 AX 확대’ 스마트제조기술기업협회 강원지회 출범",
+        "link": "https://www.kado.net/news/articleView.html?idxno=2069470",
+        "source": "강원도"
     },
     {
-        "region": "충청북도",
-        "title": "충북대 '퀀텀-AI'로 성장엔진 연계 지역인재 양성 강화",
-        "link": "https://www.news1.kr/local/sejong-chungbuk/6270227",
-        "source": "뉴스1"
+        "region": "경상남도",
+        "title": "경남대, 메가존과 피지컬AX연구협력센터 개소",
+        "link": "https://www.gnmaeil.com/news/articleView.html?idxno=593756",
+        "source": "경남매일"
     },
     {
-        "region": "경상북도",
-        "title": "대경권 성장엔진에 미래모빌리티·로봇·반도체·2차전지 선정",
-        "link": "http://imaeil.com/page/view/2026082618395114332",
-        "source": "매일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
