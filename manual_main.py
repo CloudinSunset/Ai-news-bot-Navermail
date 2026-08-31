@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서울·도쿄, AI 행정 경험 공유…공동연구·실증 추진",
-        "link": "https://www.newsis.com/view/NISX20260829_0003768034",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "DGIST·유한양행·제이인츠바이오·연세-유일한 폐암 연구소,바이오산업 AX 공동연구 업무협약",
-        "link": "https://www.munhwa.com/article/11613177?ref=naver",
-        "source": "문화일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "전남광주특별시, 164억 투입 '피지컬AI 휴머노이드' 혁신센터 구축",
-        "link": "https://www.greened.kr/news/articleView.html?idxno=348618",
-        "source": "녹색경제신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "강원도",
-        "title": "‘지역 제조산업 AX 확대’ 스마트제조기술기업협회 강원지회 출범",
-        "link": "https://www.kado.net/news/articleView.html?idxno=2069470",
-        "source": "강원도"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남대, 메가존과 피지컬AX연구협력센터 개소",
-        "link": "https://www.gnmaeil.com/news/articleView.html?idxno=593756",
-        "source": "경남매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
