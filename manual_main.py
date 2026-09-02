@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "서울·전남광주·부울경, 양자클러스터 지정…지역 QX 시동",
-        "link": "https://www.etnews.com/20260902000061",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "부산",
-        "title": "부산·전남·충남대 ‘서울대 10개 만들기’ 선정…교당 700억 지원",
-        "link": "https://www.metroseoul.co.kr/article/20260902500005",
-        "source": "메트로"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북대, ‘로봇 특성화대학원’ 선정…피지컬 AI 인재양성 거점 도약",
-        "link": "https://news.unn.net/news/articleView.html?idxno=596725",
-        "source": "한국대학신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "새만금, 피지컬AI·AI데이터센터 거점화 기반 마련…정부예산안 2222억 확정",
-        "link": "https://www.news1.kr/local/jeonbuk/6277564",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
