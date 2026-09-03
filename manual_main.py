@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "정부 ‘보안 특화 AI’ 개발 사업자로 네이버 컨소시엄 선정",
+        "link": "https://www.donga.com/news/Economy/article/all/20260903/134596717/1",
+        "source": "동아일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천시, 490억원 투입해 AI 기반 대드론 방산클러스터 구축",
+        "link": "https://www.etnews.com/20260903000002",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경과원-KISTI, 도내 기업 AI 전환 맞춤형 지원",
+        "link": "http://www.m-i.kr/news/articleView.html?idxno=1409412",
+        "source": "매일일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북특별자치도의회, 피지컬 AI로 제조ㆍ농업 혁신 이끈다",
+        "link": "https://www.honamjeil.com/news/articleView.html?idxno=26405",
+        "source": "호남제일신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전북대-NH아문디, AI·전략산업 인재 키운다",
+        "link": "http://m.jlmaeil.com/view.php?idx=303404",
+        "source": "전라매일"
     },
     {
         "region": "[지역]",
