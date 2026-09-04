@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "기보, 한수원과 AI 감사체계 고도화",
-        "link": "https://www.etnews.com/20260903000140",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "인천",
-        "title": "인천시교육청, 'AI교육행정혁신 추진단' 출범",
-        "link": "https://www.yna.co.kr/view/RPR20260903008100353",
-        "source": "연합뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "GIST, 스위스 베른대와 양자광기술 연구 협력…공동 사무실 설치",
-        "link": "https://www.etnews.com/20260904000038",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청북도",
-        "title": "국립한밭대 과기부 'AI최고급신진연구자사업' 선정…6년간 115억 지원",
-        "link": "https://www.news1.kr/local/daejeon-chungnam/6280323",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 틱톡코리아와 업무협약 체결…AI·디지털 콘텐츠 산업 활성화",
-        "link": "https://www.metroseoul.co.kr/article/20260903500588",
-        "source": "메트로"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
