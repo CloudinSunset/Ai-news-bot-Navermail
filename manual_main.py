@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "대구",
-        "title": "DGIST-한국기계연구원, 미래 기계·제조 산업 혁신 이끌 업무협약 체결",
-        "link": "https://www.ksmnews.co.kr/news/view.php?idx=621303",
-        "source": "경상매일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "전남광주시, AI 활용 백신 제조·품질관리 기술개발 추진",
-        "link": "https://www.munhwa.com/article/11615920?ref=naver",
-        "source": "문화일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "강원도",
-        "title": "강원도, 한전과 AI데이터센터 전력망 구축 맞손",
-        "link": "https://www.dtoday.co.kr/news/articleView.html?idxno=791063",
-        "source": "일간투데이"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남 ‘제조 AI 인재 1500명 육성案’ 뽑혔다",
-        "link": "https://www.donga.com/news/Society/article/all/20260909/134637739/2",
-        "source": "동아일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
