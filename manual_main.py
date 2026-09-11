@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대전",
+        "title": "대전교육청-DX교육데이터협회, AI교육 데이터 기반 미래교육 협력",
+        "link": "https://www.chungnamilbo.co.kr/news/articleView.html?idxno=908792",
+        "source": "충남일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대전",
+        "title": "대전시 AI혁신전략위 출범…시정·미래산업 AX 가속",
+        "link": "https://v.daum.net/v/20260910183650361",
+        "source": "대전일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경기도",
+        "title": "경기도의회 디지털의정위 출범…AI 의정플랫폼 구축 본격화",
+        "link": "https://www.sidae.com/article/2026091109353596702",
+        "source": "동행미디어시대"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "강원 수출, KOTRA가 돕는다..AI기반 맞춤형 수출전략",
+        "link": "https://v.daum.net/v/20260911090609945",
+        "source": "헤럴드경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남도, 8개 시군에 27개사·1.5조 규모 투자유치",
+        "link": "https://www.mt.co.kr/policy/2026/09/10/2026091014115560104",
+        "source": "머니투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "포항 영일만산단에 국내 첫 '피지컬 AI 로봇 파운드리' 들어선다",
+        "link": "http://imaeil.com/page/view/2026091016163012255",
+        "source": "매일신문"
     },
     {
         "region": "[지역]",
