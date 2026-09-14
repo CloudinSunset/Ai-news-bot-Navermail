@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대전",
+        "title": "대전교육청·DX교육데이터협회, AI 미래 교육 활성화 협력",
+        "link": "https://www.newspim.com/news/view/20260910000961",
+        "source": "뉴스핌"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "대전",
+        "title": "KAIST, 롯데와 지속가능 미래 위한 연구거점 ‘LOTTE x KAIST R&D CENTER’준공",
+        "link": "https://www.aitimes.kr/news/articleView.html?idxno=41892",
+        "source": "인공지능신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "홍성군, 3개 기업과 6150억 투자 협약",
+        "link": "https://siminilbo.co.kr/news/newsview.php?ncode=1160279688659634&dt=m",
+        "source": "시민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "전남광주특별시교육청, 2기 ‘전남글로텍학교’ 3개교 최종 선정",
+        "link": "https://www.dailyculture.kr/2186912",
+        "source": "문화매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "영남대, 세계 최고 인공지능 연구자 양성 'AI 스타펠로우십' 최종 선정…국비 110억 지원",
+        "link": "http://www.asiae.co.kr/news/view.htm?idxno=2026091409475872157",
+        "source": "아시아경제"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남도 'K-조선 미래비전' 발맞춰 조선·해양 제조 AI 허브로 발돋움",
+        "link": "https://www.etnews.com/20260914000063",
+        "source": "전자신문"
     },
     {
         "region": "[지역]",
