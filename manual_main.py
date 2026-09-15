@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "대구",
-        "title": "대구시 '에너지기술공유대학' 공모 선정…전문인력 305명 양성",
-        "link": "https://www.newsis.com/view/NISX20260915_0003789763",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "화순, ‘AI 바이오 제조혁신’ 시험장 된다…전남광주, 50억 국비 확보",
-        "link": "https://www.viva100.com/article/20260910500162",
-        "source": "브릿지경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "광주",
-        "title": "GIST, 의료 AI 원천기술 개발 및 신진연구자 양성 나선다",
-        "link": "https://www.fnnews.com/news/202609150856207475",
-        "source": "파이낸셜뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "완주군, ‘실물 인공지능’ 산업 육성 본격",
-        "link": "https://www.jbjnews.com/news/articleView.html?idxno=325946",
-        "source": "전북제일신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, 4년간 600억 들여 AI·항공·바이오 인재 2만명 양성",
-        "link": "https://www.news1.kr/local/daegu-gyeongbuk/6290574",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
