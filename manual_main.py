@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "인천",
-        "title": "인천시, AI 커넥티드 모빌리티 기업 간담회...청라 중심 미래 산업 생태계 육성",
-        "link": "https://www.incheonnews.com/news/articleView.html?idxno=440519",
-        "source": "인천뉴스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "경과원, UAE 프리사이트와 맞손…도내 AI기업 중동 진출·투자유치 확대",
-        "link": "https://www.mk.co.kr/article/12154149",
-        "source": "매일경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북, 국가 피지컬AI SW플랫폼 공모 최종 선정…5년간 7368억 투입",
-        "link": "https://www.news1.kr/local/jeonbuk/6292279",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상남도",
-        "title": "경남, 인천·강원과 ‘제조 AI로봇 인재’ 키운다",
-        "link": "https://v.daum.net/v/20260916081332073",
-        "source": "경남신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
