@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "ETRI, 대한민국 AI 글라스 생태계 구축 나섰다...산·학·연·관 모여 경쟁력 강화 논의",
+        "link": "https://www.aitimes.kr/news/articleView.html?idxno=41957",
+        "source": "인공지능신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천 서해구, 행안부 지능형 업무관리플랫폼 '온AI' 지방정부 시범기관 선정",
+        "link": "https://www.kmaeil.com/news/articleView.html?idxno=652068",
+        "source": "경인매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "NC AI, 1.4조 전북·경남 피지컬 AI 프로젝트 참여",
+        "link": "https://www.news1.kr/it-science/internet-platform/6293297",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "한국로봇융합연구원-삼성중공업, 미래 조선·로봇 기술 협력 ‘맞손’",
+        "link": "https://www.aitimes.kr/news/articleView.html?idxno=41956",
+        "source": "인공지능신문"
     },
     {
         "region": "[지역]",
