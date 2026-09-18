@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "원주에 'AI융합혁신교육원' 개소…의료·피지컬AI 인재 키운다",
+        "link": "https://www.news1.kr/it-science/general-science/6293481",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "충북도-LG AI연구원, 첨단소재 AX 플랫폼 구축 맞손",
+        "link": "https://www.etnews.com/20260918000062",
+        "source": "전자신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청남도",
+        "title": "충남·중국 광둥, ‘AI·첨단제조 '미래산업 동맹'",
+        "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1100556",
+        "source": "충청매일"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "LH·LX 전북본부, AI로 개발사업 보상업무 혁신",
+        "link": "https://www.jbjnews.com/news/articleView.html?idxno=326245",
+        "source": "전북제일신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "전주시 '피지컬AI 특별도시' 도약 동력 확보",
+        "link": "https://www.kitvnews.co.kr/news/article.html?no=1665466",
+        "source": "한국미디어뉴스"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남 최초 공공형 AI 인프라 '제조 데이터센터' 기업에 문 활짝",
+        "link": "https://www.etnews.com/20260918000208",
+        "source": "전자신문"
     },
     {
         "region": "[지역]",
