@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "노원구, 행안부 ‘온AI’ 시범 지자체 선정…지방정부 AX 표준 구축",
+        "link": "http://www.jeonmae.co.kr/news/articleView.html?idxno=1295245",
+        "source": "전국매일신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "강원도",
+        "title": "강원 AI 헬스케어 유럽 실증망 발트 3국으로 확대",
+        "link": "https://www.kado.net/news/articleView.html?idxno=2074020",
+        "source": "강원도민일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "충청북도",
+        "title": "수자원공사, 대청댐 수열 활용 '친환경 AI 데이터센터 집적단지' 추진",
+        "link": "https://www.dtoday.co.kr/news/articleView.html?idxno=793150",
+        "source": "일간투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "현대건설, 포항에 국내 첫 AI 데이터센터 짓는다…내년 말 가동 목표",
+        "link": "https://www.newsis.com/view/NISX20260921_0003797765",
+        "source": "뉴시스"
     },
     {
         "region": "[지역]",
