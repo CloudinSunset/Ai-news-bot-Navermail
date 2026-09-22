@@ -30,40 +30,40 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "부산",
-        "title": "부산대, 지역지능화혁신인재양성사업 선정… AI기술 자립 지원",
-        "link": "http://www.asiae.co.kr/news/view.htm?idxno=2026092208344111178",
-        "source": "아시아경제"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대구",
-        "title": "대구시, 디지털·AI 신사업에 ‘중장기 전략’ 더한다",
-        "link": "http://www.dailyculture.kr/2198951",
-        "source": "문화매일"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "강원도",
-        "title": "동해시, 국비 80억 확보…160억 규모 ‘스마트도시’ 본격화",
-        "link": "https://v.daum.net/v/tvkDdNd8S1",
-        "source": "강원일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "충청남도",
-        "title": "천안시, ‘AI 교육 전문인력 1기’ 위촉…시민 맞춤형 교육 본격화",
-        "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=910937",
-        "source": "충남일보"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경상북도",
-        "title": "경북도, AI 대전환 선언…'도민 일상과 산업 전반에 활용'",
-        "link": "https://www.newsis.com/view/NISX20260922_0003799656",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "제주도",
-        "title": "제주·완주·문막 노후산단, AI·그린 첨단산단으로 바꾼다",
-        "link": "https://www.edaily.co.kr/News/Read?newsId=03178326645582744&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-        "source": "이데일리"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
