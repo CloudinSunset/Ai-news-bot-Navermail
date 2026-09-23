@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "산은, '피지컬 AI 지역거점 발전 포럼' 개최…제조 혁신 생태계 조성",
+        "link": "https://www.dtoday.co.kr/news/articleView.html?idxno=793656",
+        "source": "일간투데이"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천광역시교육청, 애플 코리아와 인간 중심 인공지능(AI) 교육 협력",
+        "link": "https://www.in-ed.co.kr/news/articleView.html?idxno=32657",
+        "source": "인천교육일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "김제시, 297억 투입 ‘시설농업 AI 로봇 실증 거점’ 조성 착수 …K-농업 혁신 선도",
+        "link": "https://v.daum.net/v/tWq3Ze4qZG",
+        "source": "프레시안"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "동구, ‘AI 중심 경제도시 대전환 위원회’ 출범",
+        "link": "http://www.msisanews.kr/574405",
+        "source": "매일시사통신"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경주시, ‘AI·AX 대전환’ 시동…미래전략 본격화",
+        "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000016823&cp=nv",
+        "source": "국민일보"
     },
     {
         "region": "[지역]",
