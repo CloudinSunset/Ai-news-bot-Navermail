@@ -30,34 +30,34 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "한국로봇산업진흥원, 체코에 첨단로봇 협력거점 열고 유럽 진출 지원 본격화",
+        "link": "https://www.irobotnews.com/news/articleView.html?idxno=48650",
+        "source": "로봇신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "부산",
+        "title": "재난안전 분야 AX 본격 시동…9400억 투자",
+        "link": "https://www.koit.co.kr/news/articleView.html?idxno=209227",
+        "source": "정보통신신문"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라북도",
+        "title": "KT클라우드, 군산에 300MW AIDC 구축…비수도권 AI 인프라 확대",
+        "link": "https://www.news1.kr/it-science/cc-newmedia/6302840",
+        "source": "뉴스1"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "무안군·전남TP, 미래산업·기업유치 협약 체결",
+        "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000068408",
+        "source": "진일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상북도",
+        "title": "경북도-메릴랜드-IonQ, 양자산업 글로벌 협력 업무협약",
+        "link": "https://www.dmilbo.com/news/articleView.html?idxno=566650",
+        "source": "도민일보"
     },
     {
         "region": "[지역]",
