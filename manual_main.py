@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "서울",
-        "title": "범정부 AI·데이터 책임관 협의회 가동…온AI·공공데이터 개방 논의",
-        "link": "https://www.news1.kr/local/moi/6303980",
-        "source": "뉴스1"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "대전",
-        "title": "대전시-육군, 방산기업 AI 실증 지원 거점 육성",
-        "link": "https://www.koit.co.kr/news/articleView.html?idxno=209254",
-        "source": "정보통신신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "경기도",
-        "title": "카카오, 인공지능안전연구소와 AI 안전성 검증 확대한다",
-        "link": "https://www.etnews.com/20260929000055",
-        "source": "전자신문"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
-        "region": "전라북도",
-        "title": "전북대, 대규모 피지컬AI 핵심 연구·실증기관에 선정",
-        "link": "https://www.newsis.com/view/NISX20260929_0003806841",
-        "source": "뉴시스"
+        "region": "[지역]",
+        "title": "[제목]",
+        "link": "[링크]",
+        "source": "[언론사]"
     },
     {
         "region": "[지역]",
