@@ -30,28 +30,28 @@ RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "").strip()
 
 MY_NEWS_LIST = [
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "서울",
+        "title": "과기부, 서울대에 ‘AI반도체 혁신연구소’ 열어",
+        "link": "https://www.donga.com/news/Economy/article/all/20260929/134755310/2",
+        "source": "동아일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "인천",
+        "title": "인천시, ‘인천물류AX 얼라이언스’ 출범…물류 산업 AI 전환 추진",
+        "link": "https://www.kyeonggi.com/article/20260930580083",
+        "source": "경기일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "전라남도",
+        "title": "켄텍, 에너지 분야 AI 혁신 인재 양성 본격화",
+        "link": "http://www.munhwa.com/article/11620371",
+        "source": "문화일보"
     },
     {
-        "region": "[지역]",
-        "title": "[제목]",
-        "link": "[링크]",
-        "source": "[언론사]"
+        "region": "경상남도",
+        "title": "경남 피지컬 AI 인재 양성 ‘완성체’ 구축",
+        "link": "http://www.newsfire.co.kr/news/articleView.html?idxno=1485788",
+        "source": "뉴스파이어"
     },
     {
         "region": "[지역]",
